@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T04:53:43.383355+00:00",
+  "generated_at": "2026-03-18T14:45:45.471040+00:00",
   "total_incidents": 192,
   "circuit_breaker_stats": {
     "total_processed": 235,
@@ -6536,5 +6536,6 @@
         "status": "LIKELY"
       }
     }
-  ]
+  ],
+  "note": "Force refresh at 2026-03-18T14:45:45.471050+00:00 - RSS feeds working"
 }
