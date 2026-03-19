@@ -13,15 +13,15 @@
       "intercepted": 5,
       "landed": 36,
       "byCountry": {
-        "iran": {
-          "launched": 13,
-          "intercepted": 1,
-          "landed": 12
-        },
         "palestine": {
-          "launched": 1,
+          "launched": 2,
           "intercepted": 0,
-          "landed": 1
+          "landed": 2
+        },
+        "iran": {
+          "launched": 12,
+          "intercepted": 1,
+          "landed": 11
         },
         "uae": {
           "launched": 5,
@@ -46,35 +46,44 @@
       }
     },
     "airstrikes": {
-      "total": 4,
+      "total": 2,
       "byCountry": {
-        "iraq": 1,
-        "iran": 2,
+        "iran": 1,
         "israel": 1
       }
     },
     "drones": {
-      "total": 3,
+      "total": 5,
       "downed": 0,
-      "byCountry": {}
+      "byCountry": {
+        "uae": {
+          "total": 1,
+          "downed": 0
+        },
+        "qatar": {
+          "total": 1,
+          "downed": 0
+        }
+      }
     },
     "incidents": {
-      "total": 192,
+      "total": 222,
       "byType": {
-        "general": 144,
+        "general": 174,
         "missile": 41,
-        "airstrike": 4,
-        "drone": 3
+        "drone": 5,
+        "airstrike": 2
       },
       "byCountry": {
-        "iran": 57,
-        "israel": 28,
-        "kuwait": 2,
+        "israel": 30,
         "palestine": 2,
-        "uae": 45,
+        "iran": 63,
+        "qatar": 18,
+        "gaza": 5,
+        "uae": 47,
+        "kuwait": 2,
+        "syria": 1,
         "saudi": 9,
-        "iraq": 1,
-        "gaza": 4,
         "oman": 1,
         "lebanon": 1
       }
@@ -90,12 +99,12 @@
         "total": 0
       },
       "missiles": {
-        "launched": 13,
+        "launched": 12,
         "intercepted": 0,
         "landed": 0
       },
       "airstrikes": {
-        "total": 2
+        "total": 1
       },
       "drones": {
         "total": 0,
@@ -103,70 +112,70 @@
       },
       "incidents": [
         {
-          "id": 919260073,
+          "id": 1558204,
+          "title": "Meet the Basij Forces, the Iranian regime's terror on the streets.",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 110519160,
           "title": "\ud83d\udd34Ali Larijani, Secretary of Iran\u2019s Supreme National Security Council and the regime\u2019s effective lead",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 601195380,
+          "id": 983255977,
           "title": "\ud83d\udd34 COMMANDER OF THE BASIJ UNIT ELIMINATED\n\nYesterday, the IDF targeted & eliminated Gholamreza Soleim",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 29431488,
+          "id": 220327353,
           "title": "\ud83c\udfafSTRUCK: Iranian regime infrastructure in different areas across Iran:\n\n\ud83d\udccdIn Tehran, dozens of muniti",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 360409476,
+          "id": 948485995,
           "title": "Surge in US gas prices deepens political peril for Trump over Iran",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 537050307,
+          "id": 282914006,
           "title": "Iran war is not delaying US weapons shipments to Taiwan, officials say",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 936237117,
+          "id": 753878996,
           "title": "\ud83c\udfaf\u2693\ufe0fIRGC NAVAL HEADQUARTERS DISMANTLED\n\nIn a precise strike last week, the IAF dismantled the headqua",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 982211747,
+          "id": 469543379,
           "title": "Wary allies show there's no quick fix to Trump's Iran crisis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 464097354,
-          "title": "Iranian footballer says 'everything will be fine' as she trains with Australian team",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 828473453,
+          "id": 789340342,
           "title": "UAE air defences engage 6 ballistic missiles, 21 UAVs\n\nThe UAE air defence systems on 16th March 202",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 480227950,
+          "id": 13572345,
           "title": "Who wants what from the Iran war?",
           "type": "general",
           "time": "",
@@ -197,70 +206,70 @@
       },
       "incidents": [
         {
-          "id": 160685667,
+          "id": 486807105,
           "title": "MDA Spokesperson: Following the recent missile fire toward Israel: \n\nMDA teams are searching a numbe",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 350721074,
+          "id": 943125444,
           "title": "MDA Spokesperson: Following the recent missile fire toward Israel: \n\nAt this time, no reports of cas",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 763565552,
+          "id": 377946310,
           "title": "\ud83d\udd34ELIMINATED: Commander of Hamas\u2019 Northern Gaza Brigade in the Naval Array\n\nIn recent weeks, Alian ha",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 740903344,
+          "id": 793687621,
           "title": "MDA Spokesperson: Following the Red Alert sirens in northern Israel: \n\nAt this time no reports of ca",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 509170242,
+          "id": 862559769,
           "title": "\u2b55The IDF has detected expanded preparations by Hezbollah to launch rocket barrages towards Israel in",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 744068844,
+          "id": 438030314,
           "title": "\u201cWe are continuing to concentrate forces and conduct precise and targeted ground operations. Coopera",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 764373908,
+          "id": 989189816,
           "title": "\u2b55\ufe0f Operational Update: Lebanon\n\nAdditional IDF troops have been deployed in Lebanon, continuing effo",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 616094130,
+          "id": 469128411,
           "title": "Israel says 'limited' ground operations under way in Lebanon",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 809515993,
+          "id": 608060043,
           "title": "'My mother cried out one last time': Palestinian boy, 12, describes how Israeli forces killed his fa",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 132609784,
+          "id": 754228363,
           "title": "Multiple scenes of missile strikes in northern Israel. Report below.",
           "type": "missile",
           "time": "",
@@ -278,7 +287,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 1,
+        "launched": 2,
         "intercepted": 0,
         "landed": 0
       },
@@ -291,16 +300,16 @@
       },
       "incidents": [
         {
-          "id": 553361034,
-          "title": "Three women killed in occupied West Bank missile attack",
+          "id": 163054571,
+          "title": "Three Palestinian women killed as missile debris hits West Bank beauty salon",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 89163475,
-          "title": "Settler extremists attack Palestinian village Mukhmas after nearby outpost demolished",
-          "type": "general",
+          "id": 65228187,
+          "title": "Missile fragments kill three Palestinians in West Bank and Thai worker in Israel",
+          "type": "missile",
           "time": "",
           "casualties": 0
         }
@@ -329,28 +338,35 @@
       },
       "incidents": [
         {
-          "id": 313030129,
+          "id": 813162045,
+          "title": "Baking in rubble: Gaza woman keeps Eid traditions alive despite shortages",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 708922536,
           "title": "Here are 10 facts that the @UN \u201cforgot\u201d to mention in its report:\n\n1.The security restrictions impos",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 934482173,
+          "id": 424435870,
           "title": "Humaid Air Bridge continues to dispatch relief aircraft carrying humanitarian aid to Gaza Strip\n\n#Wa",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 516623576,
+          "id": 175629175,
           "title": "Let\u2019s be clear:\n\nHundreds of aid trucks enter Gaza every single day.\n\nCoordination is ongoing and ba",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 780776089,
+          "id": 830403635,
           "title": "The Coordinator of Government Activities in the Territories, Major General Yoram Halevi, informed th",
           "type": "general",
           "time": "",
@@ -381,7 +397,7 @@
       },
       "incidents": [
         {
-          "id": 25028128,
+          "id": 179578361,
           "title": "\ud83c\udfaf LEBANON: Strikes against Hezbollah infrastructure sites continue \n\n\ud83d\udccdIN BEIRUT: Several command cen",
           "type": "missile",
           "time": "",
@@ -410,7 +426,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 438164166,
+          "title": "Deraa marks 15 years since uprising against Syria's Assad regime",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "yemen": {
@@ -458,63 +482,63 @@
       },
       "incidents": [
         {
-          "id": 696542814,
-          "title": "Iran war live: Qatar, Saudi energy sites attacked; Riyadh says trust gone",
+          "id": 497071594,
+          "title": "Saudi Arabia says trust with Iran 'completely shattered' by attacks on Gulf states",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 392513641,
+          "id": 521618600,
           "title": "R to @MOISaudiArabia: Avoid spreading rumors and unverified videos. Get your information from offici",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 214893032,
+          "id": 618664094,
           "title": "RT by @MOISaudiArabia: #\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a: \n\u0625\u0635\u0627\u0628\u0629 (4) \u0645\u0642\u064a\u0645\u064a\u0646 \u0648\u0623\u0636\u0631\u0627\u0631 \u0645\u0627\u062f\u064a\u0629 \u0645\u062d\u062f\u0648\u062f\u0629 \u0646\u062a\u064a\u062c\u0629 \u0633\u0642\u0648\u0637 \u0634\u0638\u0627\u064a\u0627 \u0627\u0639\u062a\u0631\u0627\u0636",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 747431896,
+          "id": 248723499,
           "title": "RT by @MOISaudiArabia: \u062a\u0644\u0642\u064a\u062a \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0645\u0646 \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0623\u0648\u0644 \u0631\u0643\u0646 \u0639\u0628\u062f\u0627\u0644\u0623\u0645\u064a\u0631 \u0627\u0644\u0634\u0645\u0631\u064a \u0648\u0632\u064a\u0631 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 802948537,
+          "id": 452431584,
           "title": "RT by @MOISaudiArabia: \u0623\u062c\u0631\u064a\u062a \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0628\u0623\u062e\u064a \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0633\u064a\u062f \u062d\u0645\u0648\u062f \u0628\u0646 \u0641\u064a\u0635\u0644 \u0627\u0644\u0628\u0648\u0633\u0639\u064a\u062f\u064a \u0648\u0632\u064a\u0631 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0641",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 305090118,
+          "id": 601921250,
           "title": "RT by @MOISaudiArabia: \u0623\u062c\u0631\u064a\u062a \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0628\u0623\u062e\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0633\u0645\u0648 \u0627\u0644\u0634\u064a\u062e \u0633\u064a\u0641 \u0628\u0646 \u0632\u0627\u064a\u062f \u0622\u0644 \u0646\u0647\u064a\u0627\u0646 \u0646\u0627\u0626\u0628 \u0631\u0626\u064a\u0633 \u0645\u062c",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 309309467,
+          "id": 62635859,
           "title": "RT by @MOISaudiArabia: \u0623\u062c\u0631\u064a\u062a \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0628\u0623\u062e\u064a \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0634\u064a\u062e \u062e\u0644\u064a\u0641\u0629 \u0628\u0646 \u062d\u0645\u062f \u0622\u0644 \u062b\u0627\u0646\u064a \u0648\u0632\u064a\u0631 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0628\u062f\u0648",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 50042890,
+          "id": 892037852,
           "title": "RT by @MOISaudiArabia: \u0623\u062c\u0631\u064a\u062a \u0627\u0644\u064a\u0648\u0645 \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0628\u0623\u062e\u064a \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0623\u0648\u0644 \u0631\u0643\u0646 \u0627\u0644\u0634\u064a\u062e \u0631\u0627\u0634\u062f \u0628\u0646 \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0622",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 217122643,
+          "id": 923992391,
           "title": "RT by @MOISaudiArabia: \u0623\u062c\u0631\u064a\u062a \u0627\u0644\u064a\u0648\u0645 \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0628\u0623\u062e\u064a \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0634\u064a\u062e \u0641\u0647\u062f \u064a\u0648\u0633\u0641 \u0633\u0639\u0648\u062f \u0627\u0644\u0635\u0628\u0627\u062d \u0627\u0644\u0646\u0627\u0626\u0628 \u0627\u0644\u0623\u0648",
           "type": "general",
           "time": "",
@@ -540,75 +564,75 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 897566216,
+          "id": 589609137,
           "title": "\u0641\u064a \u062d\u0627\u0644\u0629 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u062a\u0635\u0644 \u0639\u0644\u0649 \u0627\u0644\u0631\u0642\u0645 997.\n\n#\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a #\u0647\u064a\u0626\u0629_\u0627\u0644\u0634\u0627\u0631\u0642\u0629_\u0644\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a #\u0627\u0644\u0634\u0627\u0631\u0642\u0629 #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a #",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 659814970,
+          "id": 75161752,
           "title": "R to @mofauae: UAE Condemns Destabilizing Terrorist Plot Targeting State of Kuwait\n\nhttps://www.mofa",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 323530115,
+          "id": 381471372,
           "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u062f\u064a\u0646 \u0627\u0644\u0645\u062e\u0637\u0637 \u0627\u0644\u0625\u0631\u0647\u0627\u0628\u064a \u0627\u0644\u062a\u062e\u0631\u064a\u0628\u064a \u0627\u0644\u0630\u064a \u0627\u0633\u062a\u0647\u062f\u0641 \u062f\u0648\u0644\u0629 \u0627\u0644\u0643\u0648\u064a\u062a \u0627\u0644\u0634\u0642\u064a\u0642\u0629\n\nhttps://www.mofa.gov.ae/ar-a",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 166515848,
+          "id": 469610562,
           "title": "R to @gcaauae: \ud83d\udeab\u26a0\ufe0f Please be advised that all recreational and sports aviation permits are currently",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 117274699,
+          "id": 721001415,
           "title": "RT by @CivilDefenceAD: Abu Dhabi authorities have responded to an incident involving falling debris ",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 386709901,
+          "id": 304858387,
           "title": "\u0627\u0633\u062a\u0636\u0627\u0641\u062a \u0627\u0644\u0647\u064a\u0626\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0644\u0637\u064a\u0631\u0627\u0646 \u0627\u0644\u0645\u062f\u0646\u064a \u0648\u0631\u0634\u0629 \u0639\u0645\u0644 \u0627\u0633\u062a\u0643\u0634\u0627\u0641\u064a\u0629 \u0628\u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0645\u0639 \u0647\u064a\u0626\u0629 \u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0648\u0627\u0644\u062d\u0643\u0648\u0645\u0629 \u0627\u0644",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 15491965,
+          "id": 873994123,
           "title": "R to @UAEmediaoffice: The Education, Human Development, and Community Development Council announces ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 586494895,
-          "title": "Iran hits key UAE oil port and Dubai airport",
+          "id": 564652670,
+          "title": "RT by @DCDDubai: \u0623\u0643\u062f\u062a \u0641\u0631\u0642 \u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0645\u062f\u0646\u064a \u0627\u0646\u062a\u0647\u0627\u0621 \u062d\u0631\u064a\u0642 \u062e\u0632\u0627\u0646 \u0627\u0644\u0648\u0642\u0648\u062f \u0641\u064a \u0645\u062d\u064a\u0637 \u0645\u0637\u0627\u0631 \u062f\u0628\u064a \u0627\u0644\u062f\u0648\u0644\u064a\u060c \u0648\u0623\u0646 \u0639\u0645\u0644\u064a\u0627\u062a ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 786463303,
+          "id": 416945246,
           "title": "\u0627\u0644\u0647\u064a\u0626\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0625\u0633\u0644\u0627\u0645\u064a\u0629 \u0648\u0627\u0644\u0623\u0648\u0642\u0627\u0641 \u0648\u0627\u0644\u0632\u0643\u0627\u0629 \u062a\u0637\u0644\u0642 \u0627\u0644\u062d\u0645\u0644\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \"\u062d\u0635\u0646\u062a\u0643 \u0628\u0627\u0633\u0645 \u0627\u0644\u0644\u0647 \u064a\u0627 \u0648\u0637\u0646\" \u062a\u062d\u062a \u0634\u0639\u0627",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 311122576,
+          "id": 33565949,
           "title": "\u0627\u0644\u062f\u0641\u0627\u0639\u0627\u062a \u0627\u0644\u062c\u0648\u064a\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 \u062a\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 6 \u0635\u0648\u0627\u0631\u064a\u062e \u0628\u0627\u0644\u064a\u0633\u062a\u064a\u0629 \u064821 \u0637\u0627\u0626\u0631\u0629 \u0645\u0633\u064a\u0651\u0631\u0629.\n\n\u062a\u0639\u0627\u0645\u0644\u062a \u0627\u0644\u062f\u0641\u0627\u0639\u0627\u062a \u0627\u0644\u062c\u0648\u064a\u0629 \u0627\u0644\u0625",
           "type": "general",
           "time": "",
@@ -654,21 +678,13 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 0
       },
       "drones": {
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 703400914,
-          "title": "Air strikes hit Iraq's Popular Mobilisation Forces, killing at least two",
-          "type": "airstrike",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "kuwait": {
@@ -693,14 +709,14 @@
       },
       "incidents": [
         {
-          "id": 117030766,
+          "id": 77741331,
           "title": "Kuwait says 10 Hezbollah operatives nabbed for alleged plot to attack \u2018vital installations\u2019",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 647057178,
+          "id": 290728594,
           "title": "\u0642\u0640\u0633\u0645\u0646\u0627 \u0648\u0627\u062d\u0640\u0640\u062f\n\n\u0643\u0644\u0645\u0627\u062a \u0648\u0627\u0644\u0642\u0627\u0621 \n\u0627\u0644\u0645\u0642\u062f\u0645 \u062f\u0643\u062a\u0648\u0631 / \u0639\u0644\u064a \u0642\u0637\u064a\u0645 \u0627\u0644\u0645\u0637\u064a\u0631\u064a\n\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0645\u062e\u0631\u062c / \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0627\u0644\u062e\u0644\u064a\u0641\u0647\n@kuwaita",
           "type": "general",
           "time": "",
@@ -749,10 +765,81 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 104768332,
+          "title": "The Ministry of Interior reminds everyone that the use of unmanned aerial vehicles (drones) is curre",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 628938528,
+          "title": "Guidelines for Children\u2019s Safety When Hearing National Alert System Warnings. #MOIQatar",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 800913773,
+          "title": "Notice regarding maintaining calm and acting appropriately when hearing the sound of an explosion.\n#",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 168539571,
+          "title": "Notice on the importance of parents ensuring children are reassured and providing them with informat",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 871906430,
+          "title": "Ministry of Interior statement on adherence to precautionary measures for social events, including w",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 658337588,
+          "title": "An integrated security system that operates around the clock, with field patrols deployed nationwide",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 855296514,
+          "title": "Safety guidelines to be followed at markets and shopping malls upon the issuance of National Warning",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 380576299,
+          "title": "The Ministry of Interior urges everyone to remain vigilant against suspicious messages and calls req",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 754233626,
+          "title": "The safety of persons with disabilities is a fundamental part of our shared responsibility. Be suppo",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 334555193,
+          "title": "Notice regarding adherence to the instructions issued by the official authorities.\n#MOIQatar",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "oman": {
@@ -777,7 +864,7 @@
       },
       "incidents": [
         {
-          "id": 980161385,
+          "id": 254792942,
           "title": "At the scene in Ramat Gan, MDA teams pronounced the deaths of a man and a woman with severe shrapnel",
           "type": "general",
           "time": "",
@@ -787,9 +874,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-03-19T06:51:22.597241",
+  "lastUpdated": "2026-03-19T09:37:41.617313",
   "timeRange": {
-    "from": "2026-03-12T06:51:22.597246",
-    "to": "2026-03-19T06:51:22.597250"
+    "from": "2026-03-12T09:37:41.617317",
+    "to": "2026-03-19T09:37:41.617321"
   }
 }
