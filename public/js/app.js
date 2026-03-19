@@ -1368,16 +1368,21 @@ function stopAircraftTracking() {
     }
 }
 
-// Satellite Tracking - CelesTrak TLE Data
-const SATELLITES = [
-    { name: 'ISS (ZARYA)', norad: '25544', lat: 25.0, lon: 51.0 },
-    { name: 'HST (Hubble)', norad: '20580', lat: 28.0, lon: 55.0 },
-    { name: 'NOAA-20', norad: '43013', lat: 24.0, lon: 53.0 },
-    { name: 'FENGYUN 1C', norad: '25730', lat: 26.0, lon: 49.0 }
-];
+// Satellite Tracking - Ground Station Integration (Satellite Position Data API)
+let satellitePositionAPI = null;
+
+function initSatellitePositionAPI() {
+    if (!satellitePositionAPI && typeof SatellitePositionDataAPI !== 'undefined') {
+        satellitePositionAPI = new SatellitePositionDataAPI();
+        console.log('🛰️ Satellite Position Data API initialized (Ground Station Integration)');
+    }
+}
 
 function updateSatelliteLayer() {
     if (!state.map) return;
+
+    // Initialize API if needed
+    initSatellitePositionAPI();
 
     // Clear existing satellite markers
     if (satelliteLayer) {
@@ -1386,44 +1391,55 @@ function updateSatelliteLayer() {
 
     satelliteLayer = L.layerGroup().addTo(state.map);
 
-    // Simulated positions (in production, calculate from TLE)
-    SATELLITES.forEach(sat => {
-        // Add slight random movement for visual effect
-        const offsetLat = (Math.random() - 0.5) * 2;
-        const offsetLon = (Math.random() - 0.5) * 2;
+    // Get real satellite positions from Satellite Position Data API
+    if (satellitePositionAPI) {
+        const positions = satellitePositionAPI.getAllPositions();
+        
+        positions.forEach(sat => {
+            // Only show satellites in the Gulf region (roughly)
+            // lat: 10-40, lon: 30-65
+            if (sat.latitude < 10 || sat.latitude > 40 || sat.longitude < 30 || sat.longitude > 65) {
+                return; // Skip satellites not over Gulf region
+            }
 
-        const satelliteIcon = L.divIcon({
-            className: 'satellite-marker',
-            html: `<div style="
-                width: 14px;
-                height: 14px;
-                background: #ffd700;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                box-shadow: 0 0 12px #ffd700;
-            "></div>`,
-            iconSize: [14, 14],
-            iconAnchor: [7, 7]
+            const satelliteIcon = L.divIcon({
+                className: 'satellite-marker',
+                html: `<div style="
+                    width: 14px;
+                    height: 14px;
+                    background: #ffd700;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 0 12px #ffd700;
+                "></div>`,
+                iconSize: [14, 14],
+                iconAnchor: [7, 7]
+            });
+
+            const marker = L.marker([sat.latitude, sat.longitude], { icon: satelliteIcon });
+
+            const popupContent = `
+                <div style="font-family: var(--font-sans); min-width: 200px;">
+                    <div style="font-weight: 600; color: #ffd700; margin-bottom: 4px;">🛰️ ${sat.name}</div>
+                    <div style="font-size: 12px; color: var(--text-muted);">
+                        Type: ${sat.type}<br>
+                        NORAD ID: ${sat.noradId}<br>
+                        Altitude: ${Math.round(sat.altitude)} km<br>
+                        Velocity: ${sat.velocity.toFixed(1)} km/s<br>
+                        Position: ${sat.latitude.toFixed(2)}°, ${sat.longitude.toFixed(2)}°<br>
+                        <span style="color: #44ff88; font-size: 10px;">✓ Live (Satellite Position Data API)</span>
+                    </div>
+                </div>
+            `;
+
+            marker.bindPopup(popupContent);
+            satelliteLayer.addLayer(marker);
         });
 
-        const marker = L.marker([sat.lat + offsetLat, sat.lon + offsetLon], { icon: satelliteIcon });
-
-        const popupContent = `
-            <div style="font-family: var(--font-sans); min-width: 180px;">
-                <div style="font-weight: 600; color: #ffd700; margin-bottom: 4px;">🛰️ ${sat.name}</div>
-                <div style="font-size: 12px; color: var(--text-muted);">
-                    NORAD ID: ${sat.norad}<br>
-                    Orbit: LEO<br>
-                    Status: Active
-                </div>
-            </div>
-        `;
-
-        marker.bindPopup(popupContent);
-        satelliteLayer.addLayer(marker);
-    });
-
-    console.log(`🛰️ Added ${SATELLITES.length} satellites to map`);
+        console.log(`🛰️ Satellite Position Data API: ${positions.length} satellites tracked, displayed in Gulf region`);
+    } else {
+        console.warn('🛰️ Satellite Position Data API not available');
+    }
 }
 
 function startSatelliteTracking() {
