@@ -2,7 +2,7 @@ name: Update RSS Feeds
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours (4 times/day)
+    - cron: '0 */12 * * *'  # Every 12 hours (2 times/day)
   workflow_dispatch:  # Manual trigger
 
 permissions:
