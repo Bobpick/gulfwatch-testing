@@ -288,6 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initializeApp() {
     console.log('🌊 Gulf Watch initializing...');
+    alert('App initializing!');
 
     // Load data
     await loadIncidents();
@@ -372,6 +373,12 @@ function initializeNavigation() {
                 const isMatch = s.dataset.section === section;
                 s.style.display = isMatch ? 'block' : 'none';
                 s.classList.toggle('active', isMatch);
+                if (isMatch) {
+                    s.style.visibility = 'visible';
+                    s.style.opacity = '1';
+                    s.style.height = 'auto';
+                    console.log('Showing ' + s.id + ' display=' + s.style.display + ' computedHeight=' + getComputedStyle(s).height);
+                }
                 console.log(`  Section ${s.dataset.section}: ${isMatch ? 'SHOW' : 'hide'}`);
             });
 

@@ -1348,11 +1348,17 @@
     display: none;
     height: auto;
   }
+  
+  #argus-section {
+    display: block;
+    height: auto;
+  }
 
   #monitor-section.active,
   #analysis-section.active,
   #data-section.active,
-  #reports-section.active {
+  #reports-section.active,
+  #argus-section.active {
     display: block;
   }
 
