@@ -1,0 +1,395 @@
+/**
+ * RAGNAROK OODA Loop Visualization Styles
+ */
+
+/* Container */
+.ragnarok-container {
+    padding: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.ragnarok-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.ragnarok-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.ragnarok-title svg {
+    stroke: var(--accent, #00ff88);
+}
+
+.ragnarok-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Summary Stats */
+.ragnarok-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.summary-stat {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.summary-stat.warning .stat-value {
+    color: #ff9800;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* Timeline */
+.ragnarok-timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-stage {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.timeline-stage:last-child {
+    padding-bottom: 0;
+}
+
+.stage-connector {
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.connector-line {
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent, #00ff88), rgba(255, 255, 255, 0.2));
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stage-node {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent, #00ff88);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+.stage-icon {
+    font-size: 18px;
+}
+
+.stage-time {
+    font-size: 9px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Content */
+.stage-content {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    margin-left: 8px;
+}
+
+.stage-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.stage-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.stage-phase {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent, #00ff88);
+    background: rgba(0, 255, 136, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.stage-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.stage-actors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.actor-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.actor-icon {
+    font-size: 14px;
+}
+
+/* Stage Metrics */
+.stage-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+}
+
+.metric-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.metric-key {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Bottleneck Analysis */
+.ragnarok-bottlenecks {
+    margin-top: 32px;
+    background: rgba(255, 152, 0, 0.05);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.bottleneck-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff9800;
+    margin-bottom: 16px;
+}
+
+.bottleneck-header svg {
+    stroke: #ff9800;
+}
+
+.bottleneck-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bottleneck-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #ff9800;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+}
+
+.bottleneck-item.severity-critical {
+    border-left-color: #f44336;
+    background: rgba(244, 67, 54, 0.1);
+}
+
+.bottleneck-item.severity-high {
+    border-left-color: #ff9800;
+    background: rgba(255, 152, 0, 0.08);
+}
+
+.bottleneck-item.severity-medium {
+    border-left-color: #ffc107;
+    background: rgba(255, 193, 7, 0.08);
+}
+
+.bottleneck-phase {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.phase-badge {
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+
+.bottleneck-time {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.bottleneck-issue {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 6px;
+}
+
+.bottleneck-recommendation {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.bottleneck-recommendation strong {
+    color: var(--accent, #00ff88);
+}
+
+/* Ragnarok Button on cards */
+.ragnarok-btn {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 200, 100, 0.1));
+    border: 1px solid var(--accent, #00ff88);
+    color: var(--accent, #00ff88);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ragnarok-btn:hover {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.3), rgba(0, 200, 100, 0.2));
+    transform: translateY(-1px);
+}
+
+/* Modal */
+.ragnarok-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ragnarok-modal-content {
+    background: #0a0a0f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.ragnarok-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.ragnarok-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ragnarok-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ragnarok-timeline {
+        padding-left: 30px;
+    }
+    
+    .stage-connector {
+        left: -30px;
+    }
+    
+    .stage-node {
+        width: 40px;
+        height: 40px;
+    }
+}

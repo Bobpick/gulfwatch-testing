@@ -405,6 +405,9 @@ function initializeNavigation() {
             } else if (section === 'data') {
                 // Initialize data tab
                 initializeData();
+            } else if (section === 'ragnarok') {
+                // Initialize Ragnarok OODA engine
+                initializeRagnarok();
             }
         });
     });
@@ -1010,6 +1013,9 @@ function renderIncidents() {
                     </a>
                     <button class="incident-action-btn report-btn" onclick="event.stopPropagation(); openReportModal(${incident.id})" title="Report False Claim">
                         🚩 Report
+                    </button>
+                    <button class="incident-action-btn ragnarok-action-btn" onclick="event.stopPropagation(); showRagnarokModal(state.incidents.find(i => i.id === ${incident.id}))" title="Ragnarok OODA">
+                        ⚡ Ragnarok
                     </button>
                 </div>
             </div>
@@ -2396,6 +2402,46 @@ function closeTranslateModal() {
     if (modal) {
         modal.classList.remove('active');
     }
+}
+
+// ============================================================================
+// RAGNAROK - OODA LOOP ESCALATION TIMELINE
+// ============================================================================
+
+let ragnarokInitialized = false;
+
+function initializeRagnarok() {
+    if (ragnarokInitialized) return;
+    
+    // Populate incident selector
+    const select = document.getElementById('ragnarok-incident-select');
+    if (!select) return;
+    
+    // Get recent high-severity incidents
+    const recentIncidents = (state.incidents || []).slice(0, 20);
+    
+    select.innerHTML = '<option value="">-- Choose a recent incident --</option>';
+    recentIncidents.forEach((inc, i) => {
+        const date = new Date(inc.published || inc.timestamp).toLocaleDateString();
+        const label = `${date} | ${inc.title || inc.type} | ${inc.severity?.toUpperCase() || 'MED'}`;
+        const globalIdx = state.incidents ? state.incidents.indexOf(inc) : i;
+        select.innerHTML += `<option value="${globalIdx}">${label}</option>`;
+    });
+    
+    // Listen for selection
+    select.addEventListener('change', (e) => {
+        const idx = parseInt(e.target.value);
+        if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
+            const incident = state.incidents[idx];
+            const output = document.getElementById('ragnarok-output');
+            if (output) {
+                output.innerHTML = renderRagnarok(incident);
+            }
+        }
+    });
+    
+    ragnarokInitialized = true;
+    console.log('⚡ Ragnarok initialized');
 }
 
 function containsArabic(text) {

@@ -22,6 +22,8 @@
     
     <!-- Vercel Analytics -->
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <!-- Ragnarok OODA CSS -->
+    <link rel="stylesheet" href="css/ragnarok.css?v=1">
 </head>
 <body>
     <!-- TOP COMMAND BAR -->
@@ -191,6 +193,13 @@
                         <polyline points="10 9 9 9 8 9"></polyline>
                     </svg>
                     Reports
+                </button>
+                <button class="tab-btn" data-section="ragnarok">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Ragnarok
                 </button>
             </nav>
 
@@ -644,6 +653,29 @@ https://gulfwatch-testing.vercel.app/feed.json
                         </div>
                     </div>
                 </div>
+
+                <!-- Ragnarok Section - OODA Loop Escalation Timeline -->
+                <div class="section" id="ragnarok-section" data-section="ragnarok" style="display: none;">
+                    <div class="ragnarok-section-header">
+                        <div class="ragnarok-section-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            RAGNAROK — Escalation Timeline Engine
+                        </div>
+                        <div class="ragnarok-section-subtitle">
+                            Select an incident to model its OODA loop: Detection → Classification → Decision → Action
+                        </div>
+                    </div>
+                    <div class="ragnarok-incident-selector">
+                        <label>Select Incident</label>
+                        <select id="ragnarok-incident-select">
+                            <option value="">-- Choose a recent incident --</option>
+                        </select>
+                    </div>
+                    <div id="ragnarok-output"></div>
+                </div>
             </div>
         </main>
 
@@ -872,7 +904,11 @@ https://gulfwatch-testing.vercel.app/feed.json
     
     <!-- Prediction Engine -->
     <script src="js/predictor.js?v=3"></script>
+    
+    <!-- Ragnarok OODA Engine -->
+    <script src="js/ragnarok.js?v=1"></script>
+    
     <!-- Application JavaScript -->
-    <script src="js/app.js?v=7"></script>
+    <script src="js/app.js?v=8"></script>
 </body>
 </html>
