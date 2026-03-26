@@ -320,6 +320,11 @@ async function loadIncidents() {
 
         state.incidents = data.incidents || [];
         applyFilters();
+        
+        // Populate Ragnarok selectors if initialized
+        if (ragnarokInitialized) {
+            populateRagnarokSelectors();
+        }
 
         console.log(`📊 Loaded ${state.incidents.length} incidents`);
     } catch (error) {
@@ -407,6 +412,15 @@ function initializeNavigation() {
             } else if (section === 'ragnarok') {
                 // Initialize Ragnarok OODA engine
                 initializeRagnarok();
+                // Ensure selectors are populated even if incidents loaded after init
+                if (state.incidents && state.incidents.length > 0) {
+                    populateRagnarokSelectors();
+                }
+                // Show the output div if it exists
+                const output = document.getElementById('ragnarok-output');
+                if (output && !output.innerHTML.trim()) {
+                    output.innerHTML = '<div class="ragnarok-empty">Select an incident above to see the OODA loop visualization</div>';
+                }
             }
         });
     });
