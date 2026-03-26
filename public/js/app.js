@@ -2527,6 +2527,8 @@ window.closeReportModal = closeReportModal;
 window.openTranslateModal = openTranslateModal;
 window.closeTranslateModal = closeTranslateModal;
 window.containsArabic = containsArabic;
+window.setRagnarokMode = setRagnarokMode;
+window.showRagnarokModal = showRagnarokModal;
 
 // Close modals when clicking outside
 document.addEventListener('click', (e) => {
