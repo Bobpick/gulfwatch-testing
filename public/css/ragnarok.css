@@ -7,6 +7,10 @@
    RAGNAROK SECTION LAYOUT (index.html integration)
    ===================================================================== */
 
+#ragnarok-section {
+    min-height: 600px;
+}
+
 .ragnarok-section-header {
     padding: 24px 24px 0;
 }

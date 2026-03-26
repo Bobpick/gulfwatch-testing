@@ -412,14 +412,25 @@ function initializeNavigation() {
             } else if (section === 'ragnarok') {
                 // Initialize Ragnarok OODA engine
                 initializeRagnarok();
-                // Ensure selectors are populated even if incidents loaded after init
-                if (state.incidents && state.incidents.length > 0) {
-                    populateRagnarokSelectors();
-                }
-                // Show the output div if it exists
+                // Render a demo visualization immediately so something is visible
                 const output = document.getElementById('ragnarok-output');
-                if (output && !output.innerHTML.trim()) {
-                    output.innerHTML = '<div class="ragnarok-empty">Select an incident above to see the OODA loop visualization</div>';
+                if (output) {
+                    output.innerHTML = '';
+                    // Try to render with first available incident
+                    const incidents = state.incidents || [];
+                    if (incidents.length > 0) {
+                        output.innerHTML = renderRagnarok(incidents[0]);
+                    } else {
+                        // Show demo with mock data
+                        output.innerHTML = renderRagnarok({
+                            id: 1,
+                            title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
+                            type: 'missile',
+                            severity: 'critical',
+                            published: new Date().toISOString(),
+                            verification: { status: 'VERIFIED' }
+                        });
+                    }
                 }
             }
         });
