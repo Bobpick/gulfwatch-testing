@@ -1344,7 +1344,8 @@
   #monitor-section,
   #analysis-section,
   #data-section,
-  #reports-section {
+  #reports-section,
+  #ragnarok-section {
     display: none;
     height: auto;
   }
@@ -1358,6 +1359,7 @@
   #analysis-section.active,
   #data-section.active,
   #reports-section.active,
+  #ragnarok-section.active,
   #argus-section.active {
     display: block;
   }

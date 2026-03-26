@@ -4,6 +4,32 @@
  */
 
 /* =====================================================================
+   RAGNAROK SECTION LAYOUT (index.html integration)
+   ===================================================================== */
+
+.ragnarok-section-header {
+    padding: 24px 24px 0;
+}
+
+.ragnarok-section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.ragnarok-section-title svg { stroke: var(--accent, #00ff88); }
+
+.ragnarok-section-subtitle {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 32px;
+}
+
+/* =====================================================================
    CONTAINER
    ===================================================================== */
 

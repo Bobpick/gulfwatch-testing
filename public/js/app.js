@@ -288,7 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initializeApp() {
     console.log('🌊 Gulf Watch initializing...');
-    alert('App initializing!');
 
     // Load data
     await loadIncidents();
@@ -2447,6 +2446,8 @@ function populateRagnarokSelectors() {
     const incidents = state.incidents || [];
     const recentIncidents = incidents.slice(0, 25);
     
+    console.log('⚡ Populating Ragnarok selectors, incidents count:', incidents.length, 'recent:', recentIncidents.length);
+    
     const makeOptions = () => {
         let opts = '<option value="">-- Select incident --</option>';
         recentIncidents.forEach((inc, i) => {
@@ -2462,6 +2463,8 @@ function populateRagnarokSelectors() {
     const singleSelect = document.getElementById('ragnarok-incident-select');
     const compareA = document.getElementById('ragnarok-compare-a');
     const compareB = document.getElementById('ragnarok-compare-b');
+    
+    console.log('⚡ Ragnarok selectors found:', { singleSelect: !!singleSelect, compareA: !!compareA, compareB: !!compareB });
     
     if (singleSelect) singleSelect.innerHTML = makeOptions();
     if (compareA) compareA.innerHTML = makeOptions();
