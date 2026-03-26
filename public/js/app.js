@@ -2409,39 +2409,111 @@ function closeTranslateModal() {
 // ============================================================================
 
 let ragnarokInitialized = false;
+let ragnarokMode = 'single';
 
 function initializeRagnarok() {
     if (ragnarokInitialized) return;
     
-    // Populate incident selector
+    // Populate all selectors
+    populateRagnarokSelectors();
+    
+    // Listen for single selector
     const select = document.getElementById('ragnarok-incident-select');
-    if (!select) return;
-    
-    // Get recent high-severity incidents
-    const recentIncidents = (state.incidents || []).slice(0, 20);
-    
-    select.innerHTML = '<option value="">-- Choose a recent incident --</option>';
-    recentIncidents.forEach((inc, i) => {
-        const date = new Date(inc.published || inc.timestamp).toLocaleDateString();
-        const label = `${date} | ${inc.title || inc.type} | ${inc.severity?.toUpperCase() || 'MED'}`;
-        const globalIdx = state.incidents ? state.incidents.indexOf(inc) : i;
-        select.innerHTML += `<option value="${globalIdx}">${label}</option>`;
-    });
-    
-    // Listen for selection
-    select.addEventListener('change', (e) => {
-        const idx = parseInt(e.target.value);
-        if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
-            const incident = state.incidents[idx];
-            const output = document.getElementById('ragnarok-output');
-            if (output) {
-                output.innerHTML = renderRagnarok(incident);
+    if (select) {
+        select.addEventListener('change', (e) => {
+            const idx = parseInt(e.target.value);
+            if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
+                const output = document.getElementById('ragnarok-output');
+                if (output) output.innerHTML = renderRagnarok(state.incidents[idx]);
             }
-        }
-    });
+        });
+    }
+    
+    // Listen for comparative selectors
+    const selectA = document.getElementById('ragnarok-compare-a');
+    const selectB = document.getElementById('ragnarok-compare-b');
+    if (selectA) {
+        selectA.addEventListener('change', updateRagnarokCompare);
+    }
+    if (selectB) {
+        selectB.addEventListener('change', updateRagnarokCompare);
+    }
     
     ragnarokInitialized = true;
     console.log('⚡ Ragnarok initialized');
+}
+
+function populateRagnarokSelectors() {
+    const incidents = state.incidents || [];
+    const recentIncidents = incidents.slice(0, 25);
+    
+    const makeOptions = () => {
+        let opts = '<option value="">-- Select incident --</option>';
+        recentIncidents.forEach((inc, i) => {
+            const date = new Date(inc.published || inc.timestamp).toLocaleDateString();
+            const sev = inc.severity?.toUpperCase() || 'MED';
+            const label = `${date} | ${(inc.title || inc.type || '').substring(0, 45)} | ${sev}`;
+            const globalIdx = incidents.indexOf(inc);
+            opts += `<option value="${globalIdx}">${label}</option>`;
+        });
+        return opts;
+    };
+    
+    const singleSelect = document.getElementById('ragnarok-incident-select');
+    const compareA = document.getElementById('ragnarok-compare-a');
+    const compareB = document.getElementById('ragnarok-compare-b');
+    
+    if (singleSelect) singleSelect.innerHTML = makeOptions();
+    if (compareA) compareA.innerHTML = makeOptions();
+    if (compareB) compareB.innerHTML = makeOptions();
+}
+
+function setRagnarokMode(mode) {
+    ragnarokMode = mode;
+    
+    // Update button states
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mode === mode);
+    });
+    
+    // Show/hide selectors
+    const singleGroup = document.getElementById('selector-single');
+    const compareA = document.getElementById('selector-compare-a');
+    const compareB = document.getElementById('selector-compare-b');
+    
+    if (mode === 'single') {
+        if (singleGroup) singleGroup.style.display = '';
+        if (compareA) compareA.style.display = 'none';
+        if (compareB) compareB.style.display = 'none';
+    } else {
+        if (singleGroup) singleGroup.style.display = 'none';
+        if (compareA) compareA.style.display = '';
+        if (compareB) compareB.style.display = '';
+    }
+    
+    // Clear output
+    const output = document.getElementById('ragnarok-output');
+    if (output) output.innerHTML = '';
+}
+
+function updateRagnarokCompare() {
+    const idxA = parseInt(document.getElementById('ragnarok-compare-a')?.value);
+    const idxB = parseInt(document.getElementById('ragnarok-compare-b')?.value);
+    
+    const output = document.getElementById('ragnarok-output');
+    if (!output) return;
+    
+    if (isNaN(idxA) || isNaN(idxB) || !state.incidents) {
+        output.innerHTML = '<div class="ragnarok-empty">Select two incidents to compare</div>';
+        return;
+    }
+    
+    const incidentA = state.incidents[idxA];
+    const incidentB = state.incidents[idxB];
+    
+    if (!incidentA || !incidentB) return;
+    
+    output.innerHTML = renderRagnarok(incidentA, incidentB, 'compare');
 }
 
 function containsArabic(text) {

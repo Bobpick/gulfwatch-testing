@@ -23,7 +23,7 @@
     <!-- Vercel Analytics -->
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
     <!-- Ragnarok OODA CSS -->
-    <link rel="stylesheet" href="css/ragnarok.css?v=1">
+    <link rel="stylesheet" href="css/ragnarok.css?v=2">
 </head>
 <body>
     <!-- TOP COMMAND BAR -->
@@ -665,14 +665,34 @@ https://gulfwatch-testing.vercel.app/feed.json
                             RAGNAROK — Escalation Timeline Engine
                         </div>
                         <div class="ragnarok-section-subtitle">
-                            Select an incident to model its OODA loop: Detection → Classification → Decision → Action
+                            Model OODA loop timelines: Detection → Classification → Decision → Action
                         </div>
                     </div>
-                    <div class="ragnarok-incident-selector">
-                        <label>Select Incident</label>
-                        <select id="ragnarok-incident-select">
-                            <option value="">-- Choose a recent incident --</option>
-                        </select>
+                    <div class="ragnarok-controls">
+                        <div class="ragnarok-mode-toggle">
+                            <button class="mode-btn active" data-mode="single" onclick="setRagnarokMode('single')">Single Incident</button>
+                            <button class="mode-btn" data-mode="compare" onclick="setRagnarokMode('compare')">Compare Two</button>
+                        </div>
+                        <div class="ragnarok-selectors">
+                            <div class="selector-group" id="selector-single">
+                                <label>Select Incident</label>
+                                <select id="ragnarok-incident-select">
+                                    <option value="">-- Choose a recent incident --</option>
+                                </select>
+                            </div>
+                            <div class="selector-group" id="selector-compare-a" style="display:none">
+                                <label>Scenario A</label>
+                                <select id="ragnarok-compare-a">
+                                    <option value="">-- Scenario A --</option>
+                                </select>
+                            </div>
+                            <div class="selector-group" id="selector-compare-b" style="display:none">
+                                <label>Scenario B</label>
+                                <select id="ragnarok-compare-b">
+                                    <option value="">-- Scenario B --</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div id="ragnarok-output"></div>
                 </div>
@@ -906,9 +926,9 @@ https://gulfwatch-testing.vercel.app/feed.json
     <script src="js/predictor.js?v=3"></script>
     
     <!-- Ragnarok OODA Engine -->
-    <script src="js/ragnarok.js?v=1"></script>
+    <script src="js/ragnarok.js?v=2"></script>
     
     <!-- Application JavaScript -->
-    <script src="js/app.js?v=8"></script>
+    <script src="js/app.js?v=9"></script>
 </body>
 </html>
