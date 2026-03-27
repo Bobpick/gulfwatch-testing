@@ -412,6 +412,9 @@ function initializeNavigation() {
             } else if (section === 'ragnarok') {
                 // Initialize Ragnarok OODA engine
                 initializeRagnarok();
+                // Scroll Ragnarok section into view
+                const ragnarokSection = document.getElementById('ragnarok-section');
+                if (ragnarokSection) ragnarokSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 // Render immediately with first available incident
                 const output = document.getElementById('ragnarok-output');
                 const incidents = state.incidents || [];
