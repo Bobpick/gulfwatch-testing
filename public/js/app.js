@@ -410,31 +410,7 @@ function initializeNavigation() {
                 // Initialize data tab
                 initializeData();
             } else if (section === 'ragnarok') {
-                // Initialize Ragnarok OODA engine
                 initializeRagnarok();
-                // Scroll Ragnarok section into view
-                const ragnarokSection = document.getElementById('ragnarok-section');
-                if (ragnarokSection) ragnarokSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Render immediately with first available incident
-                const output = document.getElementById('ragnarok-output');
-                const incidents = state.incidents || [];
-                console.log('Ragnarok tab opened, incidents count:', incidents.length);
-                if (output) {
-                    if (incidents.length > 0) {
-                        console.log('Rendering with incident:', incidents[0].title);
-                        output.innerHTML = renderRagnarok(incidents[0]);
-                    } else {
-                        console.log('No incidents, rendering demo');
-                        output.innerHTML = renderRagnarok({
-                            id: 1,
-                            title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
-                            type: 'missile',
-                            severity: 'critical',
-                            published: new Date().toISOString(),
-                            verification: { status: 'VERIFIED' }
-                        });
-                    }
-                }
             }
         });
     });
@@ -2439,39 +2415,63 @@ let ragnarokInitialized = false;
 let ragnarokMode = 'single';
 
 function initializeRagnarok() {
-    if (ragnarokInitialized) return;
-    
-    // Populate all selectors
+    // Always repopulate selectors (incidents may have updated)
     populateRagnarokSelectors();
-    
-    // Listen for single selector
-    const select = document.getElementById('ragnarok-incident-select');
-    if (select) {
-        select.addEventListener('change', (e) => {
-            const idx = parseInt(e.target.value);
-            console.log('Selector changed, idx:', idx, 'incidents:', state.incidents?.length);
-            if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
-                console.log('Rendering incident:', state.incidents[idx].title);
-                const output = document.getElementById('ragnarok-output');
-                if (output) output.innerHTML = renderRagnarok(state.incidents[idx]);
-            } else {
-                console.log('No valid incident found for idx:', idx);
-            }
-        });
+
+    if (!ragnarokInitialized) {
+        // Listen for single selector
+        const select = document.getElementById('ragnarok-incident-select');
+        if (select) {
+            select.addEventListener('change', (e) => {
+                const idx = parseInt(e.target.value);
+                if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
+                    const output = document.getElementById('ragnarok-output');
+                    if (output) output.innerHTML = renderRagnarok(state.incidents[idx]);
+                }
+            });
+        }
+
+        // Listen for comparative selectors
+        const selectA = document.getElementById('ragnarok-compare-a');
+        const selectB = document.getElementById('ragnarok-compare-b');
+        if (selectA) selectA.addEventListener('change', updateRagnarokCompare);
+        if (selectB) selectB.addEventListener('change', updateRagnarokCompare);
+
+        ragnarokInitialized = true;
     }
-    
-    // Listen for comparative selectors
-    const selectA = document.getElementById('ragnarok-compare-a');
-    const selectB = document.getElementById('ragnarok-compare-b');
-    if (selectA) {
-        selectA.addEventListener('change', updateRagnarokCompare);
-    }
-    if (selectB) {
-        selectB.addEventListener('change', updateRagnarokCompare);
-    }
-    
-    ragnarokInitialized = true;
+
+    // Auto-render: pick first incident or show demo
+    renderRagnarokDefault();
     console.log('⚡ Ragnarok initialized');
+}
+
+function renderRagnarokDefault() {
+    const output = document.getElementById('ragnarok-output');
+    if (!output) return;
+
+    const incidents = state.incidents || [];
+    const select = document.getElementById('ragnarok-incident-select');
+
+    if (incidents.length > 0) {
+        // Auto-select first incident in dropdown
+        if (select && !select.value) select.value = '0';
+        const idx = select ? parseInt(select.value) : 0;
+        const incident = incidents[isNaN(idx) ? 0 : idx];
+        if (incident) {
+            output.innerHTML = renderRagnarok(incident);
+            return;
+        }
+    }
+
+    // Fallback demo incident
+    output.innerHTML = renderRagnarok({
+        id: 1,
+        title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
+        type: 'missile',
+        severity: 'critical',
+        published: new Date().toISOString(),
+        verification: { status: 'VERIFIED' }
+    });
 }
 
 function populateRagnarokSelectors() {
