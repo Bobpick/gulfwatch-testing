@@ -2447,31 +2447,44 @@ function initializeRagnarok() {
 
 function renderRagnarokDefault() {
     const output = document.getElementById('ragnarok-output');
-    if (!output) return;
-
-    const incidents = state.incidents || [];
-    const select = document.getElementById('ragnarok-incident-select');
-
-    if (incidents.length > 0) {
-        // Auto-select first incident in dropdown
-        if (select && !select.value) select.value = '0';
-        const idx = select ? parseInt(select.value) : 0;
-        const incident = incidents[isNaN(idx) ? 0 : idx];
-        if (incident) {
-            output.innerHTML = renderRagnarok(incident);
-            return;
-        }
+    if (!output) {
+        console.error('⚡ ragnarok-output element not found');
+        return;
     }
 
-    // Fallback demo incident
-    output.innerHTML = renderRagnarok({
-        id: 1,
-        title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
-        type: 'missile',
-        severity: 'critical',
-        published: new Date().toISOString(),
-        verification: { status: 'VERIFIED' }
-    });
+    try {
+        const incidents = state.incidents || [];
+        const select = document.getElementById('ragnarok-incident-select');
+        let incident = null;
+
+        if (incidents.length > 0) {
+            if (select && !select.value) select.value = '0';
+            const idx = select ? parseInt(select.value) : 0;
+            incident = incidents[isNaN(idx) ? 0 : idx] || incidents[0];
+        }
+
+        if (!incident) {
+            incident = {
+                id: 1,
+                title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
+                type: 'missile',
+                severity: 'critical',
+                published: new Date().toISOString(),
+                verification: { status: 'VERIFIED' }
+            };
+        }
+
+        console.log('⚡ Rendering Ragnarok for:', incident.title);
+        const html = renderRagnarok(incident);
+        console.log('⚡ Ragnarok HTML length:', html?.length || 0);
+        output.innerHTML = html;
+        output.style.display = 'block';
+        output.style.visibility = 'visible';
+        output.style.minHeight = '500px';
+    } catch (err) {
+        console.error('⚡ Ragnarok render error:', err);
+        output.innerHTML = '<div style="color:red;padding:24px">Ragnarok error: ' + err.message + '</div>';
+    }
 }
 
 function populateRagnarokSelectors() {
