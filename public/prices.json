@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-03-29T02:24:19.070636+00:00",
+  "generated_at": "2026-03-29T12:55:18.309011+00:00",
   "prices": {
     "brent": {
       "name": "Brent Oil",
       "price": 105.32,
-      "change": -2.49,
+      "change": -6.44,
       "formatted_price": "$105.32",
-      "formatted_change": "-2.49%",
-      "updated_at": "2026-03-29T02:24:18.186707+00:00"
+      "formatted_change": "-6.44%",
+      "updated_at": "2026-03-29T12:55:17.635456+00:00"
     },
     "gas": {
       "name": "Natural Gas",
       "price": 3.025,
-      "change": 0.87,
+      "change": -2.26,
       "formatted_price": "$3.025",
-      "formatted_change": "+0.87%",
-      "updated_at": "2026-03-29T02:24:18.362536+00:00"
+      "formatted_change": "-2.26%",
+      "updated_at": "2026-03-29T12:55:18.083593+00:00"
     },
     "gold": {
       "name": "Gold",
       "price": 4524.3,
-      "change": 3.4,
+      "change": 0.72,
       "formatted_price": "$4524",
-      "formatted_change": "+3.40%",
-      "updated_at": "2026-03-29T02:24:18.533451+00:00"
+      "formatted_change": "+0.72%",
+      "updated_at": "2026-03-29T12:55:18.140200+00:00"
     },
     "bitcoin": {
       "name": "Bitcoin",
-      "price": 66557.83,
-      "change": 0.34,
-      "formatted_price": "$66,558",
-      "formatted_change": "+0.34%",
-      "updated_at": "2026-03-29T02:24:18.790145+00:00"
+      "price": 66780.336,
+      "change": 0.69,
+      "formatted_price": "$66,780",
+      "formatted_change": "+0.69%",
+      "updated_at": "2026-03-29T12:55:18.197245+00:00"
     },
     "iron": {
       "name": "Iron Ore",
@@ -39,15 +39,15 @@
       "change": -3.93,
       "formatted_price": "$60.09",
       "formatted_change": "-3.93%",
-      "updated_at": "2026-03-29T02:24:18.931015+00:00"
+      "updated_at": "2026-03-29T12:55:18.253234+00:00"
     },
     "copper": {
       "name": "Copper",
       "price": 5.495,
-      "change": 0.9,
+      "change": 0.51,
       "formatted_price": "$5.50",
-      "formatted_change": "+0.90%",
-      "updated_at": "2026-03-29T02:24:19.070617+00:00"
+      "formatted_change": "+0.51%",
+      "updated_at": "2026-03-29T12:55:18.308998+00:00"
     }
   }
 }
