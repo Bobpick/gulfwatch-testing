@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T12:56:32.989399+00:00",
+  "generated_at": "2026-04-12T02:30:58.341825+00:00",
   "prices": {
     "brent": {
       "name": "Brent Oil",
@@ -7,7 +7,7 @@
       "change": -0.75,
       "formatted_price": "$95.20",
       "formatted_change": "-0.75%",
-      "updated_at": "2026-04-11T12:56:32.607220+00:00"
+      "updated_at": "2026-04-12T02:30:57.513909+00:00"
     },
     "gas": {
       "name": "Natural Gas",
@@ -15,7 +15,7 @@
       "change": -0.82,
       "formatted_price": "$2.648",
       "formatted_change": "-0.82%",
-      "updated_at": "2026-04-11T12:56:32.680824+00:00"
+      "updated_at": "2026-04-12T02:30:57.672905+00:00"
     },
     "gold": {
       "name": "Gold",
@@ -23,15 +23,15 @@
       "change": -0.1,
       "formatted_price": "$4787",
       "formatted_change": "-0.10%",
-      "updated_at": "2026-04-11T12:56:32.747852+00:00"
+      "updated_at": "2026-04-12T02:30:57.862610+00:00"
     },
     "bitcoin": {
       "name": "Bitcoin",
-      "price": 72979.43,
-      "change": 0.0,
-      "formatted_price": "$72,979",
-      "formatted_change": "+0.00%",
-      "updated_at": "2026-04-11T12:56:32.843185+00:00"
+      "price": 71819.875,
+      "change": -1.69,
+      "formatted_price": "$71,820",
+      "formatted_change": "-1.69%",
+      "updated_at": "2026-04-12T02:30:58.047701+00:00"
     },
     "iron": {
       "name": "Iron Ore",
@@ -39,7 +39,7 @@
       "change": 0.08,
       "formatted_price": "$66.32",
       "formatted_change": "+0.08%",
-      "updated_at": "2026-04-11T12:56:32.912028+00:00"
+      "updated_at": "2026-04-12T02:30:58.182544+00:00"
     },
     "copper": {
       "name": "Copper",
@@ -47,7 +47,7 @@
       "change": 2.4,
       "formatted_price": "$5.89",
       "formatted_change": "+2.40%",
-      "updated_at": "2026-04-11T12:56:32.989381+00:00"
+      "updated_at": "2026-04-12T02:30:58.341806+00:00"
     }
   }
 }
