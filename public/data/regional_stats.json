@@ -1,29 +1,31 @@
 {
   "regional": {
     "casualties": {
-      "military": 0,
-      "civilian": 0,
-      "total": 0,
-      "byCountry": {}
+      "military": 7,
+      "civilian": 10,
+      "total": 17,
+      "byCountry": {
+        "israel": 7
+      }
     },
     "missiles": {
-      "launched": 4,
+      "launched": 3,
       "intercepted": 0,
-      "landed": 4,
+      "landed": 3,
       "byCountry": {
         "israel": {
-          "launched": 3,
+          "launched": 2,
           "intercepted": 0,
-          "landed": 3
+          "landed": 2
         }
       }
     },
     "airstrikes": {
-      "total": 1,
+      "total": 0,
       "byCountry": {}
     },
     "drones": {
-      "total": 4,
+      "total": 6,
       "downed": 0,
       "byCountry": {
         "israel": {
@@ -33,23 +35,23 @@
       }
     },
     "incidents": {
-      "total": 123,
+      "total": 129,
       "byType": {
-        "general": 114,
-        "drone": 4,
-        "airstrike": 1,
-        "missile": 4
+        "general": 120,
+        "drone": 6,
+        "missile": 3
       },
       "byCountry": {
-        "israel": 27,
-        "iran": 16,
-        "uae": 40,
-        "gaza": 9,
-        "qatar": 6,
-        "saudi": 3,
-        "syria": 2,
+        "qatar": 9,
+        "israel": 23,
+        "iran": 18,
+        "uae": 41,
+        "iraq": 2,
+        "syria": 4,
+        "gaza": 5,
+        "lebanon": 1,
+        "saudi": 4,
         "palestine": 1,
-        "oman": 2,
         "bahrain": 1
       }
     }
@@ -77,71 +79,71 @@
       },
       "incidents": [
         {
-          "id": 385734354,
-          "title": "IDF blows up 2 vast Hezbollah attack tunnels built with \u2018direct guidance\u2019 from Iran",
+          "id": 860808302,
+          "title": "Former US officials criticise Pentagon silence on deadly Iran school attack",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 688052669,
+          "id": 119611227,
+          "title": "King Charles agrees with me on Iran nuclear weapon ban, claims Trump",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 134051667,
+          "title": "Calls for humanitarian corridor through strait of Hormuz as Iran war hits vital aid",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 721246510,
+          "title": "Marxists and monarchists: the group hoping to unite Iran\u2019s exiled opposition",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 290472739,
+          "title": "Trump warns Iran: 'No more Mr Nice Guy'",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 682224539,
+          "title": "Jonjo Shelvey on his first coaching role and how he felt safe in Dubai amid Iran conflict",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 694258839,
+          "title": "Iran war latest: Trump warns Iran to get its 'act together'",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 535580650,
+          "title": "Fifa Council: Increased World Cup prize money, Asian Cup dates, red card reforms - but no Iran",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 276105389,
           "title": "Middle East crisis: Trump hits back at German chancellor after Merz said Iran was \u2018humiliating\u2019 US \u2013",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 336512375,
-          "title": "Q&A replay: Two months of Iran war - what could happen next?",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 698195618,
-          "title": "UK summons Iranian ambassador over 'inflammatory' post",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 966284648,
-          "title": "Iran says it has right to take 'necessary' measures in Strait of Hormuz",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 169992807,
-          "title": "Iranian authorities announce 'Internet Pro scheme'",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 949697628,
-          "title": "London memorial wall to victims of Iran regime hit by arson attack",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 629504256,
-          "title": "Iran war latest: Trump says Iran in 'state of collapse' and urging reopening of Hormuz",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 735953684,
+          "id": 434398373,
           "title": "Middle East crisis: Iran\u2019s foreign ministry condemns US seizure of Iranian-linked tankers as \u2018piracy",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 833005236,
-          "title": "\u2018I should not have wished for war\u2019: six ordinary Iranians on how the US-Israel conflict has changed ",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -153,12 +155,12 @@
       "name": "Israel",
       "flag": "\ud83c\uddee\ud83c\uddf1",
       "casualties": {
-        "military": 0,
+        "military": 7,
         "civilian": 0,
-        "total": 0
+        "total": 7
       },
       "missiles": {
-        "launched": 3,
+        "launched": 2,
         "intercepted": 0,
         "landed": 0
       },
@@ -171,71 +173,71 @@
       },
       "incidents": [
         {
-          "id": 332604029,
+          "id": 410577215,
+          "title": "Germany Salutes Arrow Weapon System Project: Bundeswehr Cross of Honor Awarded to Senior Israel MOD ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 551302580,
+          "title": "\ud83c\udfafDISMANTLED: 1,000+ terrorist infrastructure sites used by Hezbollah terrorists to carry out attacks",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 83908903,
+          "title": "Hezbollah drone strikes target Israeli soldiers in southern Lebanon",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 594837334,
+          "title": "Lebanon accuses Israel of committing \u2018ecocide\u2019 in country since 2023",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 238280935,
           "title": "Israel\u2019s direction poses \u2018existential threat\u2019 to Judaism, UK\u2019s leading progressive rabbis warn",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 800157109,
+          "id": 909926132,
           "title": "R to @Israel_MOD: As part of a multi-year national clearance program, INMAA has cleared more than 6,",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 335342500,
+          "id": 140239135,
           "title": "Let\u2019s talk facts, not slogans. Since the ceasefire began, over 12,500 tons of medical equipment have",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 21991080,
+          "id": 819775045,
           "title": "Pro-Palestine activists appear in court over attack on Israeli arms factory in Germany",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 527855622,
-          "title": "Why is the US media silent about Israel\u2019s role in Trump\u2019s decision to go to war? | Jason Stanley",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 56972299,
-          "title": "\u2018Israel must change direction\u2019: Netanyahu rivals join forces for next election",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 652155276,
-          "title": "Deadly Israeli attacks worsen Gaza\u2019s water shortage crisis",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 344580948,
+          "id": 538730957,
           "title": "Israeli strikes kill 14 in Lebanon amid ongoing ceasefire",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 400558960,
+          "id": 965245678,
           "title": "\ud83c\udfafSTRUCK: Hezbollah terrorists & military infrastructure sites used to advance attacks against IDF so",
-          "type": "missile",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 728871525,
-          "title": "\ud83c\udfafDISMANTLED: An underground terror tunnel containing living quarters, military equipment and weapons",
           "type": "missile",
           "time": "",
           "casualties": 0
@@ -265,7 +267,7 @@
       },
       "incidents": [
         {
-          "id": 446006548,
+          "id": 33939679,
           "title": "What is the latest Palestine Action court case \u2013 and what is at stake?",
           "type": "general",
           "time": "",
@@ -296,64 +298,36 @@
       },
       "incidents": [
         {
-          "id": 15596574,
-          "title": "US Envoy Thanks Morocco for \u2018Concrete\u2019 Contributions to Gaza Stability at UN",
+          "id": 395583494,
+          "title": "Gaza's agricultural crisis represents 'collapse in food system', says Mercy Corps",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 834642082,
+          "id": 23696565,
           "title": "A lot goes on behind the scenes to keep the water flowing. This graphic shows just a bit of the dail",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 532910020,
+          "id": 361607782,
           "title": "R to @cogatonline: 2/4 The facts: Water supply in Gaza consistently exceeds humanitarian thresholds,",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 274485814,
+          "id": 173527084,
           "title": "Yesterday, we coordinated the medical evacuation of approximately 200 patients and escorts to Jordan",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 202298095,
-          "title": "Gazans deprived of water in Israel's 'engineered' crisis, experts say",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 969054804,
+          "id": 751606961,
           "title": "There are a lot of lies going around about the situation of water in Gaza, let's set the record stra",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 678340548,
-          "title": "Since the humanitarian pause began, we have facilitated the entry of over 12,500 tons of medical sup",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 405858408,
-          "title": "600 trucks on average. Every single day.\n\nWhether via the UN or the private sector, we are moving th",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 689061120,
-          "title": "Since the ceasefire began, we have facilitated the entry of 1.5 million tons of food into Gaza, spec",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -381,7 +355,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 873032215,
+          "title": "Egypt secures Lebanon deal to legalise status of undocumented workers",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "syria": {
@@ -406,14 +388,28 @@
       },
       "incidents": [
         {
-          "id": 765088636,
-          "title": "Mansour bin Zayed receives Syrian Minister of Religious Endowments\n\n#WamNews \n\nhttps://www.wam.ae/a/",
+          "id": 102592114,
+          "title": "3-year-old rescued after falling into 18-metre-deep well in Syria",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 922221732,
+          "id": 546717717,
+          "title": "Syrian Endowments Minister praises UAE\u2019s approach to promoting tolerance, peace\n\n#WamNews \n\nhttps://",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 985683023,
+          "title": "After years in limbo, court lets Syrian convert live in Israel with husband, a disabled vet",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 679091532,
           "title": "WATCH: 700 landmines detonated near the Syrian border \ud83d\udca5\n\nThe Israel National Mine Action Authority (",
           "type": "general",
           "time": "",
@@ -467,21 +463,28 @@
       },
       "incidents": [
         {
-          "id": 892087760,
+          "id": 767422840,
+          "title": "RT by @MOISaudiArabia: Makkah Route Initiative.. the Journey of a Lifetime.",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 719151767,
           "title": "RT by @SaudiDCD: #\u0645\u062c\u0644\u0633_\u0627\u0644\u0648\u0632\u0631\u0627\u0621 ..",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 191107728,
+          "id": 294814123,
           "title": "R to @MOISaudiArabia: Any expatriate who is late in leaving after the expiration of the entry visa g",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 788856638,
+          "id": 595410168,
           "title": "RT by @SaudiDCD: \u064a\u0639\u0627\u0642\u0628 \u0627\u0644\u0648\u0627\u0641\u062f \u0627\u0644\u0630\u064a \u064a\u062a\u0623\u062e\u0631 \u0639\u0646 \u0627\u0644\u0645\u063a\u0627\u062f\u0631\u0629 \u0639\u0642\u0628 \u0627\u0646\u062a\u0647\u0627\u0621 \u0635\u0644\u0627\u062d\u064a\u0629 \u062a\u0623\u0634\u064a\u0631\u0629 \u0627\u0644\u062f\u062e\u0648\u0644 \u0627\u0644\u0645\u0645\u0646\u0648\u062d\u0629 \u0644\u0647 \u0628\u063a\u0631",
           "type": "general",
           "time": "",
@@ -512,71 +515,71 @@
       },
       "incidents": [
         {
-          "id": 462201703,
+          "id": 178466906,
+          "title": "How the UAE\u2019s decision to leave Opec could recast the Middle East",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 829214960,
+          "title": "UAE quits Opec in win for Trump as oil cartel weakened",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 143776029,
+          "title": "RT by @mofauae: Abdullah bin Zayed empfing @Nouripour, Vizepr\u00e4sident des Deutschen Bundestages. Im M",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 913754700,
+          "title": "RT by @mofauae: Abdullah bin Zayed received Omid Nouripour, Vice President of the German\nBundestag, ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 116972512,
           "title": "RT by @mofauae: \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0646 \u0632\u0627\u064a\u062f \u064a\u0633\u062a\u0642\u0628\u0644 \u0623\u0648\u0645\u064a\u062f \u0646\u0648\u0631\u064a\u0628\u0648\u0631\u060c \u0646\u0627\u0626\u0628 \u0631\u0626\u064a\u0633 \u0627\u0644\u0628\u0648\u0646\u062f\u0633\u062a\u0627\u063a \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u060c \u0648\u062c\u0631\u0649 \u062e\u0644\u0627\u0644 \u0627\u0644\u0644\u0642\u0627",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 644420808,
+          "id": 401731321,
           "title": "RT by @mofauae: O Presidente dos EAU recebe uma carta do Presidente de Angola. Abdullah bin Zayed re",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 510836352,
+          "id": 734537881,
           "title": "RT by @mofauae: UAE President receives a letter from the President of Angola. Abdullah bin Zayed rec",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 348733330,
+          "id": 676254807,
           "title": "RT by @mofauae: \u0635\u0627\u062d\u0628 \u0627\u0644\u0633\u0645\u0648 \u0627\u0644\u0634\u064a\u062e \u0645\u062d\u0645\u062f \u0628\u0646 \u0632\u0627\u064a\u062f \u0622\u0644 \u0646\u0647\u064a\u0627\u0646\u060c \u0631\u0626\u064a\u0633 \u0627\u0644\u062f\u0648\u0644\u0629 \"\u062d\u0641\u0638\u0647 \u0627\u0644\u0644\u0647\"\u060c \u064a\u062a\u0644\u0642\u0649 \u0631\u0633\u0627\u0644\u0629 \u062e\u0637\u064a\u0629 \u0645\u0646",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 357692240,
-          "title": "R to @mofauae: Sheikh Shakhboot bin Nahyan Receives Secretary-General of the African Continental Fre",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 180282075,
+          "id": 182390750,
           "title": "\u0627\u0633\u062a\u0642\u0628\u0644 \u0645\u0639\u0627\u0644\u064a \u0645\u062d\u0645\u062f \u0628\u0646 \u0645\u0628\u0627\u0631\u0643 \u0628\u0646 \u0641\u0627\u0636\u0644 \u0627\u0644\u0645\u0632\u0631\u0648\u0639\u064a\u060c \u0648\u0632\u064a\u0631 \u0627\u0644\u062f\u0648\u0644\u0629 \u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u062f\u0641\u0627\u0639\u060c \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u064a\u0633\u062a\u064a\u0631 \u0643\u0627\u0631\u0646\u0632\u060c \u0648\u0632\u064a\u0631 \u0627\u0644\u0642",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 70576786,
-          "title": "R to @UAEmediaoffice: Under the patronage of His Highness Sheikh Mansour bin Zayed Al Nahyan . . \u201cEm",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 936615121,
+          "id": 988124167,
           "title": "RT by @moiuae: \u0632\u0631\u062a \u0627\u0644\u0645\u0639\u0631\u0636 \u0627\u0644\u0632\u0631\u0627\u0639\u064a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a 2026 \u0628\u0646\u0633\u062e\u062a\u0647 \u0627\u0644\u062b\u0627\u0646\u064a\u0629 \u0641\u064a \u0645\u0631\u0643\u0632 \u0623\u062f\u0646\u064a\u0643 \u0628\u0627\u0644\u0639\u064a\u0646\u061b \u062d\u064a\u062b \u062a\u062c\u0644\u062a \u0642\u0648\u0629 \u0627",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 403258118,
-          "title": "RT by @moiuae: \u0627\u0639\u062a\u0645\u062f\u0646\u0627  \u062d\u0632\u0645\u0629 \u0645\u0646 \u0627\u0644\u0645\u0628\u0627\u062f\u0631\u0627\u062a \u0648\u0627\u0644\u0642\u0631\u0627\u0631\u0627\u062a \u0644\u062f\u0639\u0645 \u0627\u0644\u0642\u0637\u0627\u0639 \u0627\u0644\u0635\u0646\u0627\u0639\u064a \u0627\u0644\u0648\u0637\u0646\u064a \u2026 \u062a\u0634\u0645\u0644 \u0625\u0646\u0634\u0627\u0621 \u0635\u0646\u062f\u0648\u0642 \u0648\u0637",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 180083481,
-          "title": "\u062a\u0646\u0641\u064a\u0630\u0627 \u0644\u062a\u0648\u062c\u064a\u0647\u0627\u062a \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0639\u0644\u064a\u0627\u060c \u062a\u0633\u062a\u0639\u062f \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0641\u0627\u0639 \u0644\u0625\u0637\u0644\u0627\u0642 \u062d\u0632\u0645\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u062a\u062d\u0648\u0644 \u0627\u0644\u0631\u0642\u0645\u064a \u0648\u0627\u0644\u0630\u0643",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -627,7 +630,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 682916679,
+          "title": "Rains revive Iraq\u2019s wetlands after years of drought",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 627634086,
+          "title": "US extends \u2018best wishes\u2019 to Iraqi PM-designate Ali Al Zaidi",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "kuwait": {
@@ -675,7 +693,7 @@
       },
       "incidents": [
         {
-          "id": 821136711,
+          "id": 54500400,
           "title": "Bahraini citizenship revoked from 69 people\n\nhttps://www.policemc.gov.bh/en/news/78177/",
           "type": "general",
           "time": "",
@@ -706,42 +724,63 @@
       },
       "incidents": [
         {
-          "id": 987041333,
+          "id": 284928999,
+          "title": "His Excellency Sheikh Abdulaziz bin Faisal bin Mohammed Al Thani, Minister of State for Interior Aff",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 475024228,
+          "title": "Qatar to host FIFA Under-17 World Cup 2026 in November\u2013December",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 216960897,
+          "title": "Ensuring the safety of children inside vehicles requires strict adherence to appropriate protection ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 920613060,
           "title": "The State of Qatar participated in the 21st meeting of the GCC Security Media Committee, held via vi",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 868160133,
+          "id": 693245856,
           "title": "The Civil Defence has contained a fire involving construction materials and waste in a vacant lot in",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 57871217,
+          "id": 900565558,
           "title": "HE Sheikh Abdulaziz bin Faisal bin Mohammed Al Thani, Minister of State for Interior Affairs, met wi",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 504959842,
+          "id": 14088676,
           "title": "On behalf of HE Sheikh Khalifa bin Hamad bin Khalifa Al Thani, Minister of Interior and Commander of",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 984231333,
+          "id": 651093796,
           "title": "Adhering to safety guidelines while scuba or freediving is essential to enhancing safety and reducin",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 578077479,
+          "id": 256708072,
           "title": "A new service on the Metrash app allows you to update or renew establishment registration (Livestock",
           "type": "general",
           "time": "",
@@ -770,28 +809,13 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 802839793,
-          "title": "Tadej Pogacar has to settle for sixth place after Tour de Romandie opening prologue",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 937027073,
-          "title": "Anti-Human Trafficking arrested man and woman for exploiting girls in immoral activities\nhttps://www",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-04-29T02:47:29.828901",
+  "lastUpdated": "2026-04-29T13:54:01.002559",
   "timeRange": {
-    "from": "2026-04-22T02:47:29.828908",
-    "to": "2026-04-29T02:47:29.828915"
+    "from": "2026-04-22T13:54:01.002572",
+    "to": "2026-04-29T13:54:01.002577"
   }
 }
