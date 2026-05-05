@@ -7,57 +7,62 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 5,
+      "launched": 15,
       "intercepted": 1,
-      "landed": 4,
+      "landed": 14,
       "byCountry": {
-        "iran": {
-          "launched": 1,
+        "uae": {
+          "launched": 4,
           "intercepted": 0,
-          "landed": 1
+          "landed": 4
+        },
+        "iran": {
+          "launched": 7,
+          "intercepted": 1,
+          "landed": 6
         },
         "israel": {
           "launched": 2,
-          "intercepted": 1,
-          "landed": 1
+          "intercepted": 0,
+          "landed": 2
         }
       }
     },
     "airstrikes": {
-      "total": 2,
+      "total": 3,
       "byCountry": {
-        "israel": 2
+        "israel": 3
       }
     },
     "drones": {
       "total": 4,
       "downed": 0,
       "byCountry": {
-        "israel": {
-          "total": 1,
+        "iran": {
+          "total": 2,
           "downed": 0
         }
       }
     },
     "incidents": {
-      "total": 117,
+      "total": 137,
       "byType": {
-        "missile": 5,
-        "drone": 4,
-        "general": 106,
-        "airstrike": 2
+        "general": 115,
+        "airstrike": 3,
+        "missile": 15,
+        "drone": 4
       },
       "byCountry": {
-        "israel": 19,
-        "iran": 22,
-        "uae": 32,
-        "qatar": 5,
-        "gaza": 2,
-        "lebanon": 3,
-        "oman": 9,
-        "syria": 1,
+        "israel": 22,
+        "iran": 26,
+        "saudi": 10,
+        "uae": 34,
+        "qatar": 9,
+        "oman": 8,
+        "syria": 2,
         "yemen": 1,
-        "saudi": 8
+        "gaza": 1,
+        "lebanon": 1
       }
     }
   },
@@ -71,7 +76,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 1,
+        "launched": 7,
         "intercepted": 0,
         "landed": 0
       },
@@ -79,76 +84,76 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 2,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 651093857,
-          "title": "Iran says ships being \u2018guided\u2019 by US through Hormuz must work with its armed forces",
+          "id": 8720509,
+          "title": "Donald Trump sends warships to break Iran\u2019s strait of Hormuz blockade",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 445596684,
+          "id": 485668395,
+          "title": "Iran executes three men in relation to January anti-regime protests",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 343052648,
           "title": "Could Iran\u2019s escalating economic crisis weaken negotiating position with US?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 963585952,
+          "id": 779246341,
+          "title": "UAE to adopt remote learning for rest of week after Iran attacks",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 450943721,
+          "title": "UAE condemns 'treacherous' Iranian aggression as three injured in Fujairah drone attack",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 985018576,
+          "title": "How does Iran view the Strait of Hormuz stalemate?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 769346104,
           "title": "UAE condemns Iranian attack on Adnoc-affiliated tanker in Strait of Hormuz",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 243719410,
-          "title": "Crew of Iranian ship seized by US Navy sent to Pakistan, minister says",
-          "type": "general",
+          "id": 997724052,
+          "title": "US destroys six Iranian small boats, shoots down missiles, drones, admiral says",
+          "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 807195360,
-          "title": "Iran executes three protesters amid surge in death penalty cases",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 121751489,
+          "id": 339257117,
           "title": "Some Iranians fear the regime is now more entrenched - and ready for revenge",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 900016438,
+          "id": 798878001,
           "title": "Trump says US navy will \u2018guide\u2019 trapped ships from strait of Hormuz amid \u2018very positive\u2019 talks with ",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 975808545,
-          "title": "R to @mofauae: ITU Council Adopts Historic UAE-Led Resolution Condemning Iranian Attacks on Civilian",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 335792260,
-          "title": "R to @mofauae: UAE Welcomes IMO Marine Environment Protection Committee Decision Demanding Iran Ceas",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 59349804,
-          "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u0631\u062d\u0628 \u0628\u0642\u0631\u0627\u0631 \u0644\u062c\u0646\u0629 \u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0628\u064a\u0626\u0629 \u0627\u0644\u0628\u062d\u0631\u064a\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u0645\u0646\u0638\u0645\u0629 \u0627\u0644\u0628\u062d\u0631\u064a\u0629 \u0627\u0644\u062f\u0648\u0644\u064a\u0629 \u0627\u0644\u0630\u064a \u064a\u0637\u0627\u0644\u0628 \u0625\u064a\u0631\u0627\u0646 \u0628\u0648\u0642\u0641 ",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -170,79 +175,79 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 2
+        "total": 3
       },
       "drones": {
-        "total": 1,
+        "total": 0,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 239105083,
+          "id": 24514388,
+          "title": "British Gaza flotilla activists say they needed hospital care after Israeli forces\u2019 abuse",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 117037742,
+          "title": "Want a green card? Better make sure you haven\u2019t criticized Israel on social media | Arwa Mahdawi",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 36113011,
+          "title": "Angry Birds caricature of Hezbollah leader deepens Lebanon divide amid war with Israel",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 701214048,
+          "title": "Israel to buy more F-35 and F-15 warplanes",
+          "type": "airstrike",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 857049975,
           "title": "Israel buying more F-35s, F-15IAs fighter jets, Netanyahu announces",
           "type": "airstrike",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 11662582,
+          "id": 531292384,
           "title": "\ud83d\udd0d DISCOVERED: Dozens of Hezbollah weapons intended for terror activity against IDF soldiers. \n\nWeapo",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 656373907,
+          "id": 827620680,
           "title": "\ud83d\udd34ELIMINATED: 2 armed Hezbollah terrorists operating south of the Forward Defense Line, posing an imm",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 569248916,
+          "id": 5587946,
           "title": "IDF to Receive Two New Fighter Squadrons: Ministerial Procurement Committee Approves Acquisition of ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 410996632,
+          "id": 112074363,
           "title": "Spain demands release of Gaza flotilla activists \u2018held illegally\u2019 by Israel",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 434927682,
+          "id": 394143360,
           "title": "Thirteen killed in Israeli strikes on southern Lebanon, health ministry says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 331904171,
-          "title": "\u2018Go inside, he will kill you\u2019: Israeli militants step up West Bank school attacks",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 798344514,
-          "title": "Australian activists released in Crete allege mistreatment by Israeli forces who intercepted Gaza fl",
-          "type": "missile",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 785466054,
-          "title": "Israel delivers Tamir interceptors to US Marine Corps for MRIC program",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 606605357,
-          "title": "Israeli police arrest man after nun attacked in Jerusalem",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -295,14 +300,7 @@
       },
       "incidents": [
         {
-          "id": 948968670,
-          "title": "Survey finds fewer than 25% of Gaza border residents feel safe, 40% don\u2019t trust state",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 869950225,
+          "id": 90929081,
           "title": "Since the start of the ceasefire, approximately 150,000 tons of flour have entered Gaza, averaging 2",
           "type": "general",
           "time": "",
@@ -333,21 +331,7 @@
       },
       "incidents": [
         {
-          "id": 950253283,
-          "title": "Winning peace in Lebanon is harder than winning war",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 228199817,
-          "title": "Iran introduces visa-on-arrival for Lebanese travellers after Beirut cancels entry deal",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 727273135,
+          "id": 260279197,
           "title": "\u2b55\ufe0f\ud83c\udfa5WATCH: A loaded and ready-to-launch launcher in southern Lebanon was struck and dismantled by the",
           "type": "general",
           "time": "",
@@ -378,8 +362,15 @@
       },
       "incidents": [
         {
-          "id": 451258093,
+          "id": 643195471,
           "title": "Security or justice? Syria faces post-Assad reckoning after string of arrests",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 770970063,
+          "title": "Jordan's air raids on Syrian border highlight emergence of new breed of drug smugglers",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -409,8 +400,8 @@
       },
       "incidents": [
         {
-          "id": 978961022,
-          "title": "International outcry after Yemeni-British official assassinated in Aden",
+          "id": 696660831,
+          "title": "International outcry after Yemeni-British official killed in Aden",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -440,57 +431,71 @@
       },
       "incidents": [
         {
-          "id": 888281771,
+          "id": 141442811,
+          "title": "RT by @SaudiDCD: \u0627\u0644\u0623\u0645\u064a\u0631 \u0639\u0628\u062f\u0627\u0644\u0639\u0632\u064a\u0632 \u0628\u0646 \u0633\u0639\u0648\u062f\u060c \u064a\u0631\u0639\u0649 \u062d\u0641\u0644 \u062a\u062e\u0631\u064a\u062c (1662) \u0637\u0627\u0644\u0628\u064b\u0627 \u0645\u0646 \u0643\u0644\u064a\u0629 \u0627\u0644\u0645\u0644\u0643 \u0641\u0647\u062f \u0627\u0644\u0623\u0645\u0646\u064a\u0629.",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 183012250,
+          "title": "RT by @MOISaudiArabia: \u0633\u0639\u062f\u062a \u0627\u0644\u064a\u0648\u0645 \u0628\u062a\u062e\u0631\u064a\u062c 1662 \u0637\u0627\u0644\u0628\u0627\u064b \u0645\u0646 \u0643\u0644\u064a\u0629 \u0627\u0644\u0645\u0644\u0643 \u0641\u0647\u062f \u0627\u0644\u0623\u0645\u0646\u064a\u0629\u060c \u0623\u0647\u0646\u0626 \u0627\u0644\u062e\u0631\u064a\u062c\u064a\u0646\u060c \u0648\u0623\u062b\u0645\u0646",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 559151559,
+          "title": "R to @MOISaudiArabia: Residents who violate the requirement to obtain a Hajj permit will be subject ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 841483674,
+          "title": "RT by @SaudiDCD: \u064a\u0639\u0627\u0642\u0628 \u0627\u0644\u0645\u0642\u064a\u0645\u0648\u0646 \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0648\u0646 \u0644\u0634\u0631\u0637 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062a\u0635\u0631\u064a\u062d \u0627\u0644\u062d\u062c \u0628\u063a\u0631\u0627\u0645\u0629 \u0645\u0627\u0644\u064a\u0629 (20,000) \u0631\u064a\u0627\u0644 \u0648\u0627\u0644\u062a",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 77725838,
           "title": "RT by @SaudiDCD: \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0628\u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0645\u0639 \u0633\u062f\u0627\u064a\u0627\u060c \u062a\u0639\u0632\u0632  \u0627\u0644\u0648\u0635\u0648\u0644 \u0627\u0644\u0622\u0645\u0646 \u0625\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0639\u0628\u0631 #\u0646\u0641\u0627\u0630 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 410378474,
+          "id": 23345464,
           "title": "RT by @MOISaudiArabia: \u0641\u064a \u0642\u0628\u0636\u0629 \u0631\u062c\u0627\u0644 \u0627\u0644\u0645\u0643\u0627\u0641\u062d\u0629.\n#\u0628\u0627\u0644\u0645\u0631\u0635\u0627\u062f",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 20605727,
+          "id": 870000050,
           "title": "RT by @SaudiDCD: \u0623\u0645\u0646 \u0645\u0633\u062a\u062f\u0627\u0645 \u0644\u062d\u0645\u0627\u064a\u0629 \u0628\u064a\u0626\u062a\u0646\u0627\u060c \u0648\u062a\u0646\u0645\u064a\u062a\u0647\u0627\u060c \u0648\u0627\u0632\u062f\u0647\u0627\u0631\u0647\u0627.\n\n#\u0623\u0633\u0628\u0648\u0639_\u0627\u0644\u0628\u064a\u0626\u0629",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 880039812,
+          "id": 240711837,
           "title": "RT by @SaudiDCD: \u062e\u0644\u0627\u0644 \u0623\u0633\u0628\u0648\u0639.. \u0636\u0628\u0637 (30) \u0645\u062e\u0627\u0644\u0641\u064b\u0627 \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u0628\u064a\u0626\u0629 \u0641\u064a \u0639\u062f\u062f \u0645\u0646 \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0645\u0645\u0644\u0643\u0629.\n\n@SFES_KSA\n@BG9",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 712640437,
+          "id": 44289563,
           "title": "RT by @MOISaudiArabia: \u0641\u064a \u0642\u0628\u0636\u0629 \u0631\u062c\u0627\u0644 \u0627\u0644\u0623\u0645\u0646.\n\n\u2067#\u062a\u0645_\u0627\u0644\u0642\u0628\u0636\u2069",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 392429061,
+          "id": 111796994,
           "title": "R to @MOISaudiArabia: A fine of up to (20,000) Riyals for anyone caught performing or attempting to ",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 508378797,
-          "title": "RT by @SaudiDCD: \u063a\u0631\u0627\u0645\u0629 \u0645\u0627\u0644\u064a\u0629 \u062a\u0635\u0644 \u0625\u0644\u0649 (20,000) \u0631\u064a\u0627\u0644 \u0644\u0645\u0646 \u064a\u0636\u0628\u0637 \u0645\u0624\u062f\u064a\u064b\u0627 \u0623\u0648 \u0645\u062d\u0627\u0648\u0644\u064b\u0627 \u0623\u062f\u0627\u0621 \u0627\u0644\u062d\u062c \u062f\u0648\u0646 \u062a\u0635\u0631\u064a\u062d.\n\n",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 648268348,
-          "title": "RT by @SaudiDCD: \u062e\u0644\u0627\u0644 \u0623\u0633\u0628\u0648\u0639.. \u0636\u0628\u0637 11300 \u0645\u062e\u0627\u0644\u0641 \u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0625\u0642\u0627\u0645\u0629 \u0648\u0627\u0644\u0639\u0645\u0644 \u0648\u0623\u0645\u0646 \u0627\u0644\u062d\u062f\u0648\u062f.\n\n#\u0648\u0637\u0646_\u0628\u0644\u0627_\u0645\u062e\u0627\u0644\u0641",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -507,7 +512,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 4,
         "intercepted": 0,
         "landed": 0
       },
@@ -520,71 +525,71 @@
       },
       "incidents": [
         {
-          "id": 4548357,
+          "id": 366148625,
+          "title": "Eid Al Adha 2026: Where to travel for under Dh2,500 from the UAE",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 278484793,
+          "title": "Banks are ready to support UAE's next phase of growth, Al Ghurair says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 136219447,
+          "title": "\u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u062c\u0648\u064a\u0629\u060c \u0639\u0644\u0649 \u0645\u062f\u0649 \u062e\u0645\u0633\u064a\u0646 \u0639\u0627\u0645\u0627\u064b\u060c \u0643\u0627\u0646\u062a \u0648\u0644\u0627 \u062a\u0632\u0627\u0644 \u0639\u064a\u0646 \u0627\u0644\u0648\u0637\u0646 \u0627\u0644\u0633\u0627\u0647\u0631\u0629 \u0641\u064a \u062d\u0645\u0627\u064a\u0629 \u0623\u062c\u0648\u0627\u0626\u0647 \u0648\u0635\u0648\u0646 \u0633\u064a\u0627\u062f\u062a\u0647\u060c \u062a\u0646\u0641",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 462229716,
+          "title": "R to @mofauae: His Excellency Saeed Al Hajeri Meets with the Deputy Prime Minister, Minister of Fore",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 366887549,
+          "title": "\u0645\u0639\u0627\u0644\u064a \u0633\u0639\u064a\u062f \u0627\u0644\u0647\u0627\u062c\u0631\u064a \u064a\u0644\u062a\u0642\u064a \u0646\u0627\u0626\u0628\u0629 \u0631\u0626\u064a\u0633 \u0627\u0644\u0648\u0632\u0631\u0627\u0621 \u0648\u0632\u064a\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0648\u064a\u0639\u0642\u062f \u0639\u062f\u062f\u0627\u064b \u0645\u0646 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u0627\u062a \u0631\u0641\u064a\u0639\u0629 \u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u062e",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 812480277,
+          "title": "RT @OFMUAE: \u0635\u0627\u062d\u0628 \u0627\u0644\u0633\u0645\u0648 \u0627\u0644\u0634\u064a\u062e \u0645\u062d\u0645\u062f \u0628\u0646 \u0632\u0627\u064a\u062f \u0622\u0644 \u0646\u0647\u064a\u0627\u0646\u060c \u0631\u0626\u064a\u0633 \u0627\u0644\u062f\u0648\u0644\u0629 \"\u062d\u0641\u0638\u0647 \u0627\u0644\u0644\u0647\"\u060c \u064a\u062a\u0644\u0642\u0649 \u0631\u0633\u0627\u0644\u0629 \u062e\u0637\u064a\u0629 \u0645\u0646 \u0641\u062e\u0627",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 171589340,
+          "title": "RT @OFMUAE: UAE President receives a letter from the President of the Republic of Singapore. Abdulla",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 145604482,
           "title": "R to @gcaauae: We are pleased to announce the full resumption of normal air navigation operations ac",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 951298085,
-          "title": "General Civil Aviation Authority announces full resumption of normal air navigation operations withi",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 60195568,
+          "id": 524928786,
           "title": "R to @mofauae: His Excellency Saeed Al Hajeri Meets Prime Minister of Georgia in Tbilisi",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 298201608,
-          "title": "RT by @moiuae: \u0639\u0644\u0645\u062a\u0646\u064a \u0627\u0644\u062d\u064a\u0627\u0629 \n\n\u0623\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0623\u0645\u0627\u0646\u0629 .. \n\n\u0648\u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0627\u0644\u0630\u064a \u064a\u0643\u0648\u0646 \u0647\u0645\u0647 \u0646\u062c\u0627\u062d\u0647 \u0627\u0644\u0634\u062e\u0635\u064a \u0641\u0642\u0637 \u0644\u064a\u0633 \u0623",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 334614169,
+          "id": 18694167,
           "title": "\u0639\u0644\u0649 \u0645\u062f\u0649 \u062e\u0645\u0633\u064a\u0646 \u0639\u0627\u0645\u0627\u064b\u060c \u0634\u0643\u0651\u0644\u062a \u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0628\u062d\u0631\u064a\u0629 \u062d\u0635\u0646\u0627\u064b \u0645\u0646\u064a\u0639\u0627\u064b \u0641\u064a \u062d\u0645\u0627\u064a\u0629 \u0648\u062a\u0623\u0645\u064a\u0646 \u0645\u064a\u0627\u0647 \u0627\u0644\u0648\u0637\u0646\u060c \u0645\u0624\u062f\u064a\u0629\u064b \u0648\u0627\u062c\u0628\u0647\u0627 \u0628\u0643\u0641",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 899908560,
-          "title": "R to @mofauae: Abdullah bin Zayed Reaffirms UAE Support for Bahrain\u2019s Sovereign Measures to Safeguar",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 73956153,
-          "title": "\u062f\u0641\u0639 \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0631\u0648\u0631\u064a\u0629\nTraffic fines Payment\n\n#\u062e\u062f\u0645\u0627\u062a\u064a_\u0631\u0642\u0645\u064a\u0629\n#MOI_go_digital\n#\u062e\u062f\u0645\u0627\u062a_\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629\n##",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 794008164,
-          "title": "R to @moiuae: Ministry of Interior reinforces concepts of community coexistence in celebration of In",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 671231076,
-          "title": "\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u062a\u0631\u0633\u062e \u0645\u0641\u0627\u0647\u064a\u0645 \u0627\u0644\u062a\u0639\u0627\u064a\u0634 \u0627\u0644\u0645\u062c\u062a\u0645\u0639\u064a \u0627\u062d\u062a\u0641\u0627\u0621\u064b \u0628\u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0644\u0644\u0639\u0645\u0627\u0644\n\n\u062a\u0632\u0627\u0645\u0646\u0627\u064b \u0645\u0639 \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0644\u0644\u0639\u0645\u0627\u0644",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 584555227,
-          "title": "R to @mofauae: UAE Calls for Immediate and Unconditional Reopening of Strait of Hormuz",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -706,35 +711,63 @@
       },
       "incidents": [
         {
-          "id": 275355114,
+          "id": 264804372,
+          "title": "Brigadier Jabr Ali Al-Kubaisi, Director General of Traffic, during the launch of Traffic Week 2026, ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 148125756,
+          "title": "Highlights from the Traffic Week 2026 activities, through the traffic awareness exhibition organized",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 800244537,
+          "title": "The 38th GCCTraffic Week Exhibition, held under the slogan \u201cI Cross Safely,\u201d at Place Vend\u00f4me Mall, ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 570914368,
           "title": "The General Directorate of Traffic invites you to visit the 38th Gulf Traffic Week Exhibition, held ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 425454973,
+          "id": 176498323,
+          "title": "Former Qatari aircraft on track for summer Air Force One delivery",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 499120987,
           "title": "The activities of Traffic Week 2026 kicked off this Sunday morning, May 3, 2026, through a traffic a",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 175697547,
+          "id": 755288343,
           "title": "HE Sheikh Khalifa bin Hamad bin Khalifa Al Thani, Minister of Interior and Commander of the Internal",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 329268762,
+          "id": 334046679,
           "title": "The Qatar Police Sports Federation concluded the 7th Open Police Beach Volleyball Championship, held",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 862055729,
+          "id": 834424776,
           "title": "Adhering to safety requirements when using jet skis enhances protection against accidents and ensure",
           "type": "general",
           "time": "",
@@ -765,63 +798,56 @@
       },
       "incidents": [
         {
-          "id": 447678971,
+          "id": 465438172,
           "title": "Cross safely\u2026 a step toward life.\n#royalomanpilice \n#i_cross_safely",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 910846757,
-          "title": "Adnoc Drilling finalises $204m deal with Oman\u2019s MB Petroleum Services in Gulf expansion push",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 217669157,
+          "id": 953389606,
           "title": "R to @RopTraffic: Report\nUnder the theme \u201cI Cross Safely,\u201d the Royal Oman Police marks GCC Traffic W",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 402358271,
+          "id": 353820360,
           "title": "R to @RoyalOmanPolice: \u062a\u0642\u0631\u064a\u0631:\n\u062a\u062d\u062a \u0634\u0639\u0627\u0631 \"\u0623\u0639\u0628\u0631 \u0628\u0623\u0645\u0627\u0646\"\n#\u0634\u0631\u0637\u0629_\u0639\u0645\u0627\u0646_\u0627\u0644\u0633\u0644\u0637\u0627\u0646\u064a\u0629 \u062a\u062d\u062a\u0641\u064a \u0628\u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 485415142,
+          "id": 461587007,
           "title": "R to @RoyalOmanPolice: \u062c\u0627\u0646\u0628 \u0645\u0646 \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a \u0641\u064a \u0645\u062d\u0627\u0641\u0638\u0629 \u0638\u0641\u0627\u0631\u060c \u062a\u062d\u062a \u0631\u0639\u0627\u064a\u0629 \u0633\u0639\u0627\u062f\u0629 \u0627\u0644\u062f\u0643\u062a\u0648\u0631 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 720936106,
+          "id": 207507033,
           "title": "R to @RoyalOmanPolice: \u062c\u0627\u0646\u0628 \u0645\u0646 \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a \u0641\u064a \u0645\u062d\u0627\u0641\u0638\u0629 \u0634\u0645\u0627\u0644 \u0627\u0644\u0634\u0631\u0642\u064a\u0629\u060c \u062a\u062d\u062a \u0631\u0639\u0627\u064a\u0629 \u0633\u0639\u0627\u062f\u0629 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 959730124,
+          "id": 818364561,
           "title": "R to @RoyalOmanPolice: \u062c\u0627\u0646\u0628 \u0645\u0646 \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a \u0641\u064a \u0645\u062d\u0627\u0641\u0638\u0629 \u0634\u0645\u0627\u0644 \u0627\u0644\u0628\u0627\u0637\u0646\u0629\u060c \u062a\u062d\u062a \u0631\u0639\u0627\u064a\u0629 \u0633\u0639\u0627\u062f\u0629 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 954046627,
+          "id": 225288297,
           "title": "R to @RoyalOmanPolice: \u062c\u0627\u0646\u0628 \u0645\u0646 \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a \u0641\u064a \u0645\u062d\u0627\u0641\u0638\u0629 \u062c\u0646\u0648\u0628 \u0627\u0644\u0628\u0627\u0637\u0646\u0629\u060c \u062a\u062d\u062a \u0631\u0639\u0627\u064a\u0629 \u0633\u0639\u0627\u062f\u0629 ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 990638683,
+          "id": 568887896,
           "title": "R to @RoyalOmanPolice: \u062c\u0627\u0646\u0628 \u0645\u0646 \u062a\u0643\u0631\u064a\u0645 \u0627\u0644\u062c\u0647\u0627\u062a \u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0629 \u0641\u064a \u0645\u0639\u0631\u0636 \u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0644\u064a\u062c\u064a\u060c \u0627\u0644\u0630\u064a \u0623\u064f\u0642\u064a\u0645 \u0641\u064a \u0645\u0648\u0644",
           "type": "general",
           "time": "",
@@ -831,9 +857,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-05-04T13:57:43.856104",
+  "lastUpdated": "2026-05-05T02:40:28.728301",
   "timeRange": {
-    "from": "2026-04-27T13:57:43.856112",
-    "to": "2026-05-04T13:57:43.856119"
+    "from": "2026-04-28T02:40:28.728306",
+    "to": "2026-05-05T02:40:28.728311"
   }
 }
