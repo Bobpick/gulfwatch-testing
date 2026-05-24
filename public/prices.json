@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-05-24T03:29:44.159446+00:00",
+  "generated_at": "2026-05-24T13:23:29.729515+00:00",
   "prices": {
     "brent": {
       "name": "Brent Oil",
       "price": 100.21,
-      "change": -2.31,
+      "change": -3.22,
       "formatted_price": "$100.21",
-      "formatted_change": "-2.31%",
-      "updated_at": "2026-05-24T03:29:43.800515+00:00"
+      "formatted_change": "-3.22%",
+      "updated_at": "2026-05-24T13:23:29.411629+00:00"
     },
     "gas": {
       "name": "Natural Gas",
       "price": 3.021,
-      "change": 0.1,
+      "change": 3.92,
       "formatted_price": "$3.021",
-      "formatted_change": "+0.10%",
-      "updated_at": "2026-05-24T03:29:43.886416+00:00"
+      "formatted_change": "+3.92%",
+      "updated_at": "2026-05-24T13:23:29.471022+00:00"
     },
     "gold": {
       "name": "Gold",
       "price": 4523.2,
-      "change": -0.37,
+      "change": 0.05,
       "formatted_price": "$4523",
-      "formatted_change": "-0.37%",
-      "updated_at": "2026-05-24T03:29:43.973183+00:00"
+      "formatted_change": "+0.05%",
+      "updated_at": "2026-05-24T13:23:29.531140+00:00"
     },
     "bitcoin": {
       "name": "Bitcoin",
-      "price": 76804.49,
-      "change": 0.19,
-      "formatted_price": "$76,804",
-      "formatted_change": "+0.19%",
-      "updated_at": "2026-05-24T03:29:44.047488+00:00"
+      "price": 76997.45,
+      "change": 0.42,
+      "formatted_price": "$76,997",
+      "formatted_change": "+0.42%",
+      "updated_at": "2026-05-24T13:23:29.616742+00:00"
     },
     "iron": {
       "name": "Iron Ore",
@@ -39,15 +39,15 @@
       "change": -0.31,
       "formatted_price": "$66.82",
       "formatted_change": "-0.31%",
-      "updated_at": "2026-05-24T03:29:44.104285+00:00"
+      "updated_at": "2026-05-24T13:23:29.674600+00:00"
     },
     "copper": {
       "name": "Copper",
       "price": 6.379,
-      "change": 1.95,
+      "change": 0.58,
       "formatted_price": "$6.38",
-      "formatted_change": "+1.95%",
-      "updated_at": "2026-05-24T03:29:44.159433+00:00"
+      "formatted_change": "+0.58%",
+      "updated_at": "2026-05-24T13:23:29.729493+00:00"
     }
   }
 }
