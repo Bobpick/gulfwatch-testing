@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-06-08T04:01:38.755929+00:00",
+  "generated_at": "2026-06-08T15:49:57.113357+00:00",
   "prices": {
     "brent": {
       "name": "Brent Oil",
-      "price": 96.37,
-      "change": 3.52,
-      "formatted_price": "$96.37",
-      "formatted_change": "+3.52%",
-      "updated_at": "2026-06-08T04:01:38.339507+00:00"
+      "price": 94.54,
+      "change": 1.56,
+      "formatted_price": "$94.54",
+      "formatted_change": "+1.56%",
+      "updated_at": "2026-06-08T15:49:56.816533+00:00"
     },
     "gas": {
       "name": "Natural Gas",
-      "price": 3.174,
-      "change": -1.7,
-      "formatted_price": "$3.174",
-      "formatted_change": "-1.70%",
-      "updated_at": "2026-06-08T04:01:38.424976+00:00"
+      "price": 3.116,
+      "change": -3.5,
+      "formatted_price": "$3.116",
+      "formatted_change": "-3.50%",
+      "updated_at": "2026-06-08T15:49:56.884644+00:00"
     },
     "gold": {
       "name": "Gold",
-      "price": 4338.3,
-      "change": -0.62,
-      "formatted_price": "$4338",
-      "formatted_change": "-0.62%",
-      "updated_at": "2026-06-08T04:01:38.472633+00:00"
+      "price": 4362.0,
+      "change": -0.08,
+      "formatted_price": "$4362",
+      "formatted_change": "-0.08%",
+      "updated_at": "2026-06-08T15:49:56.952796+00:00"
     },
     "bitcoin": {
       "name": "Bitcoin",
-      "price": 63116.0,
-      "change": -0.31,
-      "formatted_price": "$63,116",
-      "formatted_change": "-0.31%",
-      "updated_at": "2026-06-08T04:01:38.606956+00:00"
+      "price": 63779.98,
+      "change": 0.85,
+      "formatted_price": "$63,780",
+      "formatted_change": "+0.85%",
+      "updated_at": "2026-06-08T15:49:56.978494+00:00"
     },
     "iron": {
       "name": "Iron Ore",
-      "price": 67.0,
-      "change": -4.76,
-      "formatted_price": "$67.00",
-      "formatted_change": "-4.76%",
-      "updated_at": "2026-06-08T04:01:38.704210+00:00"
+      "price": 66.055,
+      "change": -7.11,
+      "formatted_price": "$66.06",
+      "formatted_change": "-7.11%",
+      "updated_at": "2026-06-08T15:49:57.035631+00:00"
     },
     "copper": {
       "name": "Copper",
-      "price": 6.2875,
-      "change": 0.05,
-      "formatted_price": "$6.29",
-      "formatted_change": "+0.05%",
-      "updated_at": "2026-06-08T04:01:38.755911+00:00"
+      "price": 6.372,
+      "change": 1.39,
+      "formatted_price": "$6.37",
+      "formatted_change": "+1.39%",
+      "updated_at": "2026-06-08T15:49:57.113340+00:00"
     }
   }
 }
