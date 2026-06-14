@@ -75,6 +75,10 @@
   color: var(--text-muted);
 }
 
+.last-update.stale-data {
+  color: #f59e0b;
+}
+
 .top-actions {
   display: flex;
   align-items: center;

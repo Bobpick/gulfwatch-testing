@@ -21,7 +21,9 @@ const state = {
     map: null,
     markers: [],
     airspaceLayer: null,
-    financeData: null
+    financeData: null,
+    dataGeneratedAt: null,
+    pricesGeneratedAt: null
 };
 
 // ============================================================================
@@ -50,11 +52,30 @@ function showError(message) {
     // Could also show a toast/notification here
 }
 
+function formatDataAge(isoTimestamp) {
+    if (!isoTimestamp) return 'Data age unknown';
+    const generated = new Date(isoTimestamp);
+    if (Number.isNaN(generated.getTime())) return 'Data age unknown';
+
+    const ageMinutes = Math.floor((Date.now() - generated.getTime()) / 60000);
+    const relative = ageMinutes < 1
+        ? 'just now'
+        : ageMinutes < 60
+            ? `${ageMinutes}m ago`
+            : ageMinutes < 1440
+                ? `${Math.floor(ageMinutes / 60)}h ago`
+                : `${Math.floor(ageMinutes / 1440)}d ago`;
+
+    return `Data: ${generated.toLocaleString()} (${relative})`;
+}
+
 function updateLastUpdateTime() {
     const el = document.getElementById('last-update');
-    if (el) {
-        el.textContent = 'Updated: ' + new Date().toLocaleTimeString();
-    }
+    if (!el) return;
+
+    const label = formatDataAge(state.dataGeneratedAt);
+    el.textContent = label;
+    el.classList.toggle('stale-data', state.dataGeneratedAt && (Date.now() - new Date(state.dataGeneratedAt).getTime()) > 12 * 60 * 60 * 1000);
 }
 
 function updateCasualtyCounts() {
@@ -319,6 +340,7 @@ async function loadIncidents() {
         const data = await response.json();
 
         state.incidents = data.incidents || [];
+        state.dataGeneratedAt = data.generated_at || null;
         applyFilters();
         
         // Populate Ragnarok selectors if initialized
@@ -326,6 +348,7 @@ async function loadIncidents() {
             populateRagnarokSelectors();
         }
 
+        updateLastUpdateTime();
         console.log(`📊 Loaded ${state.incidents.length} incidents`);
     } catch (error) {
         console.error('❌ Failed to load incidents:', error);
@@ -338,6 +361,7 @@ async function loadFinanceData() {
         const response = await fetch('prices.json?t=' + Date.now());
         const data = await response.json();
         state.financeData = data.prices || {}; // Extract prices object
+        state.pricesGeneratedAt = data.generated_at || null;
         updateFinancePanel();
     } catch (error) {
         console.error('❌ Failed to load finance data:', error);
@@ -345,8 +369,7 @@ async function loadFinanceData() {
 }
 
 async function refreshData() {
-    await loadIncidents();
-    updateLastUpdateTime();
+    await Promise.all([loadIncidents(), loadFinanceData()]);
 
     if (state.currentSection === 'map') {
         updateMapMarkers();
@@ -476,10 +499,9 @@ function updateMissileDefenseDashboard(selectedCountry) {
     // Update source attribution
     updateMissileDefenseSource(selectedCountry);
 
-    // Update last updated time
     const lastUpdatedEl = document.getElementById('missile-last-updated');
     if (lastUpdatedEl) {
-        lastUpdatedEl.textContent = `Updated: ${new Date().toLocaleString()}`;
+        lastUpdatedEl.textContent = formatDataAge(state.dataGeneratedAt);
     }
 }
 

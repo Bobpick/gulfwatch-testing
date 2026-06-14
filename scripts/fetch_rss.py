@@ -11,8 +11,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Optional
 
-# Add parent directory to path for imports
-sys.path.insert(0, '/Users/ares/workspace/gulfwatch-testing/scripts')
+# Add scripts directory to path for imports
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent))
 
 from circuit_breaker import CircuitBreaker
 
@@ -530,15 +530,16 @@ def fetch_all():
         'incidents': unique_incidents
     }
     
-    # Write to JSON
-    with open('public/incidents.json', 'w', encoding='utf-8') as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+    # Write to JSON (incidents.json is the app source; feed.json is the public API alias)
+    for output_path in ('public/incidents.json', 'public/feed.json'):
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
     
     print()
     print("=" * 50)
     print(f"✅ Generated {len(unique_incidents)} unique incidents")
     print(f"🛡️  Circuit Breaker filtered: {len(all_incidents) - len(unique_incidents)} duplicates")
-    print(f"📁 Saved to public/incidents.json")
+    print(f"📁 Saved to public/incidents.json and public/feed.json")
 
 if __name__ == '__main__':
     fetch_all()
