@@ -1021,7 +1021,7 @@ function renderIncidents() {
                     <span class="incident-type" title="${(incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' ')}">${(incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' ')}</span>
                     ${govBadge}
                 </div>
-                <div class="incident-title line-clamp-2">${escapeHtml(incident.title)}</div>
+                <div class="incident-title line-clamp-2">${escapeHtml(incident.title)}${incident.translated ? ' <span class="translated-badge" title="Auto-translated to English">EN</span>' : ''}</div>
                 <div class="incident-coords">
                     ${hasCoords ? `📍 ${incident.location.lat.toFixed(4)}, ${incident.location.lng.toFixed(4)}` : '📍 No coordinates'}
                 </div>
@@ -1033,9 +1033,9 @@ function renderIncidents() {
                     <button class="incident-action-btn" onclick="event.stopPropagation(); window.open('${escapeHtml(sourceUrl)}', '_blank')" title="View Source">
                         🔗 Source
                     </button>
-                    <a class="incident-action-btn" href="https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(incident.title)}&op=translate" target="_blank" rel="noopener" title="Translate">
-                        🌐 Translate
-                    </a>
+                    ${incident.translated && incident.title_original
+                        ? `<button class="incident-action-btn" onclick="event.stopPropagation(); showTranslatedOriginal(${incident.id})" title="View original text">🌐 Original</button>`
+                        : `<a class="incident-action-btn" href="https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(incident.title)}" target="_blank" rel="noopener" title="Translate">🌐 Translate</a>`}
                     <button class="incident-action-btn report-btn" onclick="event.stopPropagation(); openReportModal(${incident.id})" title="Report False Claim">
                         🚩 Report
                     </button>
@@ -2422,6 +2422,23 @@ function openTranslateModal(incidentId) {
     }
 }
 
+function showTranslatedOriginal(incidentId) {
+    const incident = state.incidents.find(i => i.id === incidentId);
+    const modal = document.getElementById('translate-modal');
+    const originalEl = document.getElementById('translate-original');
+    const resultEl = document.getElementById('translate-result');
+    const linkEl = document.getElementById('translate-link');
+
+    if (!incident || !modal || !originalEl || !resultEl) return;
+
+    originalEl.textContent = incident.title_original || incident.title;
+    resultEl.textContent = incident.title;
+    if (linkEl) {
+        linkEl.href = `https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(incident.title_original || incident.title)}`;
+    }
+    modal.classList.add('active');
+}
+
 function closeTranslateModal() {
     const modal = document.getElementById('translate-modal');
     if (modal) {
@@ -2596,6 +2613,7 @@ window.openReportModal = openReportModal;
 window.closeReportModal = closeReportModal;
 window.openTranslateModal = openTranslateModal;
 window.closeTranslateModal = closeTranslateModal;
+window.showTranslatedOriginal = showTranslatedOriginal;
 window.containsArabic = containsArabic;
 window.setRagnarokMode = setRagnarokMode;
 window.showRagnarokModal = showRagnarokModal;

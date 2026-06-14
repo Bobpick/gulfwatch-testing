@@ -22,7 +22,7 @@ jobs:
         python-version: '3.11'
         
     - name: Install dependencies
-      run: pip install feedparser
+      run: pip install feedparser deep-translator
       
     - name: Fetch RSS feeds
       env:

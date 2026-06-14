@@ -15,6 +15,7 @@ from typing import List, Dict, Optional
 sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent))
 
 from circuit_breaker import CircuitBreaker
+from translate_utils import prepare_english_title
 
 # MENA-focused RSS feeds
 FEEDS = [
@@ -360,11 +361,13 @@ def fetch_feed(feed_info: Dict) -> List[Dict]:
             
             # Extract casualties
             casualties = extract_casualties(title)
+            title_info = prepare_english_title(title)
+            display_title = title_info['title']
             
             # Create incident
             incident = {
                 'id': hash(title + feed_info['name']) % 1000000000,
-                'title': title,
+                'title': display_title,
                 'source': feed_info['name'],
                 'source_url': entry.get('link', ''),
                 'published': published.isoformat(),
@@ -375,9 +378,12 @@ def fetch_feed(feed_info: Dict) -> List[Dict]:
                 'is_government': feed_info.get('is_government', False),
                 'casualties': casualties,
             }
+            if title_info.get('title_original'):
+                incident['title_original'] = title_info['title_original']
+                incident['translated'] = True
             
             incidents.append(incident)
-            print(f"   ✅ {title[:60]}...")
+            print(f"   ✅ {display_title[:60]}...")
         
         print(f"   Found {len(incidents)} incidents")
         
@@ -438,10 +444,12 @@ def fetch_newsdata_api():
                         
                         # Extract casualties
                         casualties = extract_casualties(title)
+                        title_info = prepare_english_title(title)
+                        display_title = title_info['title'][:200]
                         
                         incident = {
                             'id': hash(title + 'newsdata') % 1000000000,
-                            'title': title[:200],
+                            'title': display_title,
                             'source': f"NewsData.io - {article.get('source_id', 'Unknown')}",
                             'source_url': article.get('link', ''),
                             'published': article.get('pubDate', datetime.now(timezone.utc).isoformat()),
@@ -452,6 +460,9 @@ def fetch_newsdata_api():
                             'is_government': False,
                             'casualties': casualties,
                         }
+                        if title_info.get('title_original'):
+                            incident['title_original'] = title_info['title_original']
+                            incident['translated'] = True
                         incidents.append(incident)
                         
         except Exception as e:
@@ -489,13 +500,14 @@ def fetch_all():
     unique_incidents = []
     for inc in all_incidents:
         # Convert to article format for Circuit Breaker
+        source_title = inc.get('title_original', inc['title'])
         article = {
-            'title': inc['title'],
+            'title': source_title,
             'location': inc['location']['name'] if inc['location'] else 'Unknown',
             'date': inc['published'],
             'source': inc['source'],
             'url': inc['source_url'],
-            'content': inc['title']  # Use title as content
+            'content': source_title
         }
         
         # Process through Circuit Breaker
