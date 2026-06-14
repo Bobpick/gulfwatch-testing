@@ -356,6 +356,23 @@ Install a menu icon that pulls updates, serves `public/` on port 8001, and opens
 ./scripts/install-desktop.sh
 ```
 
+The launcher is **headless** — no terminal needs to stay open. It starts:
+
+- A background web server on port 8001
+- A background refresh loop (`scripts/background-refresh.sh`) that:
+  - `git pull`s every **5 minutes** (picks up GitHub Actions data updates)
+  - Runs a full RSS fetch every **6 hours** (if `.venv` exists)
+
+The browser reloads `incidents.json` and `prices.json` every **60 seconds**, but those files only change when the background updater or GitHub Actions writes new data.
+
+```bash
+# Check background updater status
+./scripts/background-refresh.sh status
+
+# Stop background updater
+./scripts/background-refresh.sh stop
+```
+
 ---
 
 ## 🔗 Links

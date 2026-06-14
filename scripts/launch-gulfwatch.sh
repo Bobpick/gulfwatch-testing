@@ -115,4 +115,11 @@ else
 fi
 
 start_server || exit 1
+
+REFRESH_SCRIPT="$REPO_ROOT/scripts/background-refresh.sh"
+if [[ -x "$REFRESH_SCRIPT" ]]; then
+    "$REFRESH_SCRIPT" start >> "$LOG_FILE" 2>&1
+    log "Background refresh loop started"
+fi
+
 open_browser
